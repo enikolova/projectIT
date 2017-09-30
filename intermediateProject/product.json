@@ -1,0 +1,346 @@
+{
+    "products": [
+        
+        {
+            "type": "phone",
+            "name": "Смартфон Samsung Galaxy S8, 64GB, 4G, Midnight Black",
+            "url": "proj/asets/images/productImages/galaxys8_black_all-500x500.png",
+            "companyName": "Samsung",
+            "price": 1299,
+            "color": "Midnight Black",
+            "description": "Открийте впечатляващите възможности на Galaxy S8, даващи началото на нов начин за опознаване на света. Камера Камера, създадена за всеки момент Улови живота в мига с камерите на Galaxy S8 и S8+. 12-мегапикселовата задна камера и 8-мегапикселовата предна камера са толкова точни и бързи, че няма да пропуснеш нито един момент, било то през деня или през нощта. Сигурност Опростена сигурност Любопитните очи не са проблем, когато имаш сканиране на ириса в Galaxy S8 и S8+. Всеки ирис, дори на един и същ човек, има уникална шарка и е почти невъзможен за имитиране. Това означава, че със сканирането на ириса телефонът ти и съдържанието му се отварят само за твоите очи. А когато трябва да го отключиш наистина бързо, разпознаването на лицe е удобна опция.*Ирисът е оцветената, пръстеновидна част на окото ти. ",
+            "isNew": false
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Huawei P9 Lite, Dual Sim, 16GB, Gold",
+            "url": "proj/asets/images/productImages/134776.970.png",
+            "companyName": "Huawei",
+            "price": 419,
+            "color": "Gold",
+            "description": "Huawei P9 Lite Превърнете мечтите в реалност с Huawei P9 Lite, наследник на P8 Lite. P9 lite се отличава с редица иновативни хардуерни ъпгрейди в модерен и тънък дизайн. Вземете следващо поколение смартфон, който съчетава в перфектна хармония динамичен дизайн и спиращ дъха стил, на конкурентна цена. СУПЕР ТЪНЪК. С подобреното съотношението на екрана и тялото от 76,4%, Huawei P9 Lite със сигурност ще ви впечатли със своят елегантен дизайн и метален панел. Екранът е 5.2 инчов FHD с по-широка цветова гама, по-тънка рамка, и повече детайли, а за деликатния завършек на телефона се грижи алуминиевата рамка.",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Huawei P8 Lite, Dual Sim, 16 GB, 4G, Black",
+            "url": "proj/asets/images/productImages/6850.png",
+            "companyName": "Huawei",
+            "price": 299,
+            "color": "Black",
+            "description": "Huawei P8 Lite разполага с нов дизайн, като всеки детайл е създаден да подобри производителността ви. 5-инчов IPS дисплей подобрява вида на изображенията и ъгъла на визуализиране.",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Apple iPhone 7 Plus, 32GB, Black",
+            "url": "proj/asets/images/productImages/iphone7-plus-black-select-2016.png",
+            "companyName": "Apple",
+            "price": 1689,
+            "color": "Black",
+            "description": "iPhone 7 подобрява съществено iPhone извижяването, предлагайки нови модерни системи на камерите. Най-добрата производителност и автономия на батерията до момента, предлагана от iPhone. Впечатляващи стерео говорители. Дизайн Водоустойчивост Камера iPhone 7 Камера iPhone 7 Plus Два обектива. Уникален резултат. Дисплей Retina HD Чип A10 Fusion Най-мощният процесор за смартфон на всички времена Аудио",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Samsung Galaxy J5 (2017), Dual Sim, 16GB, 4G, Blue Silver",
+            "url": "proj/asets/images/productImages/res.png",
+            "companyName": "Samsung",
+            "price": 469,
+            "color": "Blue Silver",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Huawei Y5II, Dual Sim, 8GB, 4G, White",
+            "url": "proj/asets/images/productImages/huawei.jpg",
+            "companyName": "Huawei",
+            "price": 209,
+            "color": "White",
+            "description": "Жалко е, когато ярките детайли не остават запечатани на снимките заради оскъдна осветеност. Двойната светкавица на Huawei Y5II се представя изключително добре в слабо осветени условия. 8 мегапикселовата камера и F2.0 блендата правят снимки, които създават усещане за професионални. Автоматичната цветова корекция създадена за портретна фотография заедно с 2 мегапикселовата предна камера правят възможни за притежателите на този модел едни от най-добрите селфи кадри. Направи портретни снимки, които се открояват и сияят! Лесен достъп. Всъщност, по-лесен отвсякога! Уморен ли си от безкрайни менюта, когато искаш просто да споделиш вълнуващ момент? Функцията за лесен достъп съкращава пътя до исканото от теб съдържание. С едно единствено докосване, двойно, или като докоснеш със задържане можеш моментално да стигнеш до предварително зададените от теб меню или апликация. Виж света със скоростта на светлината и кристална яснота на образа Huawei Y5II предизвиква с красив 5 инчов HD LCD дисплей, доставящ чиста и ярка картина - истински празник за окото. Всъщност нещо повече от изолирана наслада за визуалните сетива. 4-ядреният процесор 1.3GHz CPU архивира графичната производителност с достатъчно мощност, така че качеството на изображението да стига до очите дори и на най-бързо сменящият картините на дисплея си потребител. Нова екосистема с фокус сигурност и ефикасност Android 5.1 базираният Huawei Y5II с операционна система обновена до EMUI3.1 създава усещане за напълно освежена функционалност и интерфейс. Паметта и апликациите са чисто подредени и лесни за откриване посредством високо ефективната Timeline функция. Архитектурата на менютата гарантира по-сигурно и гладко преживяване. Виж повече",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "Мобилен телефон Nokia 216 Dual SIM, Black",
+            "url": "proj/asets/images/productImages/10349.png",
+            "companyName": "Nokia",
+            "price": 74,
+            "color": "Black",
+            "description": "Новата Nokia 216 Dual SIM съчетава чудесни развлекателни функции и модерен дизайн. Насладете се на високо качество на гласови повиквания, изключителен живот на батерията, вградено FM Radio, MP3 и видео плейър, с до 18 часа време за разговори и до 19 дни стендбай режим",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Lenovo VIBE K5, Dual Sim, 16GB, 4G, Silver",
+            "url": "proj/asets/images/productImages/lenovo-smartphone-vibe-k5-plus-hero.png",
+            "companyName": "Lenovo",
+            "price": 268,
+            "color": "Silver",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Apple iPhone 6, 32GB, Space Gray",
+            "url": "proj/asets/images/productImages/skew.png",
+            "companyName": "Apple",
+            "price": 749,
+            "color": "Space Gray",
+            "description": "",
+            "isNew": false
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон ZTE Blade A320, Dual Sim, 8GB, 4G, Jet Black",
+            "url": "proj/asets/images/productImages/telefon-mobil-zte-blade-a610-32gb-dual-sim-4g-grey.jpg",
+            "companyName": "ZTE",
+            "price": 188,
+            "color": "Jet Black",
+            "description": "",
+            "isNew": false
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Lenovo Moto E3, 8GB, 4G, Black",
+            "url": "proj/asets/images/productImages/8_bl.jpg",
+            "companyName": "Lenovo",
+            "price": 229,
+            "color": "Black",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "Смартфон Honor 8, Dual Sim, 32GB, 4G, Midnight Black",
+            "url": "proj/asets/images/productImages/huawei-honor-8-32gb-dual-black-000000921397",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "phone",
+            "name": "",
+            "url": "proj/asets/images/productImages/",
+            "companyName": "",
+            "price": 1,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "tablet",
+            "name": "Таблет Lenovo Tab 3 TB3-710F, 7'', Quad-Core 1.3 GHz, 1GB, 16GB, IPS, Black",
+            "url": "proj/asets/images/productImages/lenovo-tablet-tab3-7-hero",
+            "companyName": "Lenovo",
+            "price": 145,
+            "color": "Black",
+            "description": "Прекрасен дисплей, за вашето удоволствие. Работете или се забавлявайте на IPS екран с висока резолюция (1024 x 600), 7 размер, на модел Tab3 7. С IPS технология, лесно разглеждайте и споделяйте съдържанието на екрана. Две необикновени камери С Tab3 7, се възползвайте от две камери за заснемане на вашите спомени. Използвайте предната Visio камера с 0,3 мегапиксела резолюция за разговори и селфита. Или заснемайте снимки и клипове с зашеметяващата основна камера с резолюция 2 мегапискела. Винаги на ваше разположение Благодарение на батерията с капацитет от 3450 mAh, този таблет осигурява до 10 часа работа с едно зареждане. GPS Никога няма да се изгубите, тъй като може да работи и без наличието на интернет. Dolby Audio Dolby позволява подобрен звук с по-голям обем, естествен и без изкривявания.",
+            "isNew": false
+        },
+        {
+            "type": "tablet",
+            "name": "Таблет ASUS ZenPad 8.0 Z380KNL, Quad-Core 1.2GHz, 2GB RAM, 16 GB, 4G, IPS, Dark Gray",
+            "url": "proj/asets/images/productImages/TBLASUSZ380KNL6A022A_680x680.jpg",
+            "companyName": "ASUS",
+            "price": 349,
+            "color": "Dark Gray",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "tablet",
+            "name": "Таблет Acer Iconia Tab 10 A3-A40, Червен с процесор 4x Cortex-A53 (1.5 GHz), 10.1, 2 GB DDR3L, 64 GB eMMC, Android 6.0 Marshmallow, Wi-Fi, Червен",
+            "url": "proj/asets/images/productImages/NTLD0EE002.jpg",
+            "companyName": "Acer",
+            "price": 449,
+            "color": "Red",
+            "description": "Операционна система: Android 6.0 Marshmallow Дисплей: 10.1 (1920x1200) IPS тъчскрийн Процесор: 4x Cortex-A53 (1.5 GHz) Вградена памет: 64 GB eMMC Оперативна памет: 2 GB DDR3L Безжични комуникации: Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Hotspot, Bluetooth 4.0, GPS Гаранционен срок: 24 месеца гаранция",
+            "isNew": true
+        },
+        {
+            "type": "tablet",
+            "name": "Таблет Prestigio MultiPad Wize 3508 4G - 8 инча, SIM, Android 5, 16GB",
+            "url": "proj/asets/images/productImages/11434.png",
+            "companyName": "Prestigio",
+            "price": 221,
+            "color": "Black",
+            "description": "",
+            "isNew": false
+        },
+        {
+            "type": "tablet",
+            "name": "Apple iPad Pro, 10.5, 512GB, 4G, Silver",
+            "url": "proj/asets/images/productImages/apple-ipad-pro-10-5-space-grey_header_new.png",
+            "companyName": "Apple",
+            "price": 2415,
+            "color": "Silver",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "tablet",
+            "name": "Таблет Prestigio MultiPad Wize 3407 4G - 7 инча, Четириядрен, 1GB RAM",
+            "url": "proj/asets/images/productImages/model.png",
+            "companyName": "Prestigio",
+            "price": 199,
+            "color": "Black",
+            "description": "",
+            "isNew": true
+        },
+       
+        {
+            "type": "tv",
+            "name": "Телевизор LED Smart LG, 43(108 cм), 43UH7507, 4K Ultra HD",
+            "url": "proj/asets/images/productImages/res_164c98a46c97fcb83574d0ab943bb49e_450x450_hkl9.jpg",
+            "companyName": "LG",
+            "price": 1099,
+            "color": "Black",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "tv",
+            "name": "Телевизор Philips 49PUS6412/12, 49(124.46 cm) 4K Ultra HD LED TV, DVB-T/T2/T2-HD/DVB-C/DVB-S/S2, Lan, Wi-Fi 802.11n, 4x HDMI, 2x USB",
+            "url": "proj/asets/images/productImages/TVLEDPHILIPS49PUS641212_2_680x680.jpg",
+            "companyName": "Philips",
+            "price": 1559,
+            "color": "Black",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "tv",
+            "name": "Телевизор LED Smart Panasonic, 65`` (164 cм), TX-65EX600E, 4K Ultra HD",
+            "url": "proj/asets/images/productImages/res_783290b1c0c8fe07fd46fd97c9f60183_450x450_o9e6.jpg",
+            "companyName": "Panasonic",
+            "price": 2699,
+            "color": "Black",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "tv",
+            "name": "Телевизор LG 32LW641H, 32`` (81.28 cm) Full HD LED Smart TV, DVB-T2/C/S2, Wi-Fi, LAN, Bluetooth, HDMI, 2x USB, WiDi",
+            "url": "proj/asets/images/productImages/TVLEDLG32LW641HAEUY_2_680x680.jpg",
+            "companyName": "LG",
+            "price": 768,
+            "color": "Black",
+            "description": "",
+            "isNew": false
+        },
+        {
+            "type": "tv",
+            "name": "Телевизор LED LG, 32`` (80 cм), 32LJ500U, HD",
+            "url": "proj/asets/images/productImages/res_9dbbf8a1cd50e1e774bb8ddf3677361d_450x450_epr7.jpg",
+            "companyName": "LG",
+            "price": 449,
+            "color": "Grey",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "tv",
+            "name": "Телевизор Philips 40PFH4201/88, 40(101.6 cm) Full HD LED, DVB-T/C, 2x HDMI, 1x USB",
+            "url": "proj/asets/images/productImages/res_2a8b714e5280e45c5cac714d400a8777_450x450_vp7d.jpg",
+            "companyName": "Philips",
+            "price": 585,
+            "color": "Black",
+            "description": "",
+            "isNew": false
+        }
+    ]
+}

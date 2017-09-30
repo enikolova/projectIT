@@ -1,0 +1,24 @@
+{
+  "name": "e-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enikolova/intermediateProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enikolova/intermediateProject/issues"
+  },
+  "homepage": "https://github.com/enikolova/intermediateProject#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.10"
+  },
+  "devDependencies": {},
+  "description": ""
+}
