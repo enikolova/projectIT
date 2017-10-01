@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded',function(){
       var menu= document.getElementById(x.id+'-menu')
       menu.addEventListener('mouseover',function(){
           menu.style.display='inline-block';
+           document.querySelector('#aside-menu').style.display='inline-block';
       })
        menu.addEventListener('mouseleave',function(){
          setTimeout(function(){
@@ -13,9 +14,9 @@ document.addEventListener('DOMContentLoaded',function(){
       })
       x.addEventListener('mouseover',function(){
            menu.style.display='inline-block';
+          
       });
       x.addEventListener('mouseout',function(){
-          x.style.border='none';
            menu.style.display='none';
       })
   })

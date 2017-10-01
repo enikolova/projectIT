@@ -14,14 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#aside-menu').css('visibility', 'visible');
         })
         $('#aside-menu').on('mouseleave', function () {
-            Array.prototype.forEach.call(document.getElementsByClassName('menu'), function (x) {
-                if (x.style.display == 'inline-block') {
-                    $('#aside-menu').css('visibility', 'visible');
-                } else {
-                    $('#aside-menu').css('visibility', 'hidden');
-                }
-            });
-
+            $('#aside-menu').css('visibility', 'hidden')
         })
 
     }
