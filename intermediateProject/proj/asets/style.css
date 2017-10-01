@@ -438,6 +438,8 @@ body{
 #productsItem article{
     width:20%;
     margin-bottom: 2%;
+    box-sizing: border-box;
+    
 }
 #productsItem h5{
     width:70%;

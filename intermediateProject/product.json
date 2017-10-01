@@ -461,7 +461,127 @@
             "color": "White",
             "description": "",
             "isNew": true
+        },
+          {
+            "type": "toys",
+            "name": "Плюшена играчка Mappy Fluffy Friends, Мече, Сива",
+            "url": "proj/asets/images/productImages/bear.jpg",
+            "companyName": "Mappy",
+            "price": 32,
+            "color": "Grey",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "toys",
+            "name": "Плюшена играчка Chippo Заек с бебе, Една българска песен, Розов, 40 см, (1110-301)",
+            "url": "proj/asets/images/productImages/bunny.jpg",
+            "companyName": "Chippo",
+            "price": 46,
+            "color": "Pink",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "toys",
+            "name": "Плюшена играчка Chippo Хъркащо Куче с 2 Допир Сензора, Българска Песен + Смях, 30см, 5111-303.",
+            "url": "proj/asets/images/productImages/dog.jpg",
+            "companyName": "Chippo",
+            "price": 39,
+            "color": "Braun",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "toys",
+            "name": "Плюшена играчка Melissa&Doug Коте, Сив",
+            "url": "proj/asets/images/productImages/cat.jpg",
+            "companyName": "Melissa&Doug",
+            "price": 21,
+            "color": "Grey",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "toys",
+            "name": "LEGO® DUPLO® Къща за игра 10616",
+            "url": "proj/asets/images/productImages/house.jpg",
+            "companyName": "LEGO",
+            "price": 48,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "toys",
+            "name": "LEGO® DUPLO® Town Домашни любимци 10838",
+            "url": "proj/asets/images/productImages/pets.jpg",
+            "companyName": "LEGO",
+            "price": 18,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+        {
+            "type": "toys",
+            "name": "LEGO® DUPLO® Кафенето на Мини 10830",
+            "url": "proj/asets/images/productImages/mini.jpg",
+            "companyName": "LEGO",
+            "price": 41,
+            "color": "",
+            "description": "",
+            "isNew": true
+        },
+         {
+            "type": "camera",
+            "name": "Дигитален фотоапарат Canon SX710HS, 20.3MP, Черен",
+            "url": "proj/asets/images/productImages/canon1.jpg",
+            "companyName": "Canon",
+            "price": 568,
+            "color": "Black",
+            "description": "",
+            "isNew": true
+        },
+         {
+            "type": "camera",
+            "name": "Дигитален фотоапарат Nikon COOLPIX WATERPROOF W100, Раница, Жълт + Карта 8 GB",
+            "url": "proj/asets/images/productImages/nikon1.jpg",
+            "companyName": "Nikon",
+            "price": 386,
+            "color": "Yellow",
+            "description": "Споделяйте мигновено всички забавления през ваканцията с водоустойчивия COOLPIX W100. С него можете да влизате под вода¹ до 10 м. Освен това той е устойчив на удар² при падане от височина до 1,8 м, на студ до -10°C и на прах¹, което означава, че е проектиран да издържа на всички неблагоприятни въздействия, на които е изложен в ежедневието. Заснемайте висококачествени снимки и Full HD видеоклипове със стереозвук и прехвърляйте изображенията автоматично чрез приложението SnapBridge към смарт устройството си за лесно споделяне и съхранение. Специалните бутони за работа с едно докосване и удобният интерфейс, който включва дори отделно меню за деца, улесняват използването на фотоапарата. 13,2-мегапикселовият COOLPIX W100 прави снимането лесно за всеки. ИЗДРЪЖЛИВОСТ, ОСИГУРЯВАЩА СПОКОЙСТВИЕ Този фотоапарат може да понесе всички въздействия, на които е възможно да бъде изложен в ежедневието. Той е водоустойчив¹ до дълбочина от 10 м и издържа на падане² от височина 1,8 м, така че не е нужно да се притеснявате, че ще се повреди от удар или капки в басейна",
+            "isNew": true
+        },
+         {
+            "type": "camera",
+            "name": "Видеокамера Sony Handycam® HDR-CX900E, Full HD, Wi-Fi, Черна",
+            "url": "proj/asets/images/productImages/sony1.jpg",
+            "companyName": "Sony",
+            "price": 2199,
+            "color": "Black",
+            "description": "",
+            "isNew": true
+        },
+         {
+            "type": "camera",
+            "name": "Видеокамера JVC Quad-Proof RX GZ-RX645AEU, Full HD, Wi-Fi, Синя",
+            "url": "proj/asets/images/productImages/jvc1.jpg",
+            "companyName": "JVC",
+            "price": 749,
+            "color": "Blue",
+            "description": "",
+            "isNew": true
+        },
+         {
+            "type": "camera",
+            "name": "Видеокамера Sony HDRPJ410B с вграден проектор, Full HD, Черна",
+            "url": "proj/asets/images/productImages/sony2.jpg",
+            "companyName": "Sony",
+            "price": 859,
+            "color": "Black",
+            "description": "",
+            "isNew": true
         }
-
+    
     ]
 }
