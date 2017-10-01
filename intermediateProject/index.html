@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src='node_modules/handlebars/dist/handlebars.min.js'></script>
+    <script src='node_modules/handlebars/dist/handlebars.min.js'></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
     <script src="node_modules/bootstrap/js/carousel.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
-     <script src='proj/asets/script/model/modelProduct.js'></script>
-     <script src='proj/asets/script/controler/productsControler.js'></script>
-      <script src='proj/asets/script/controler/products.js'></script>
+    <script src='proj/asets/script/model/modelProduct.js'></script>
+    <script src='proj/asets/script/controler/productsControler.js'></script>
+    <script src='proj/asets/script/controler/products.js'></script>
     <script src='proj/asets/script/menu.js'></script>
     <script src='proj/asets/script/logIn.js'></script>
     <link rel="stylesheet" href="proj/asets/style.css">
@@ -22,7 +22,7 @@
     <script src='proj/asets/script/reg.js'></script>
     <link rel="stylesheet" href="proj/asets/fontAwesome.css">
     <link rel="stylesheet" href="proj/asets/reset.css">
-   
+
 
 </head>
 
@@ -248,6 +248,15 @@
                 </div>
             </div>
             <div id='ninth-menu' class='menu' style='display:none'>
+                <div>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
             </div>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -281,192 +290,74 @@
 
                     <!-- Left and right controls -->
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
+                       <span class="glyphicon glyphicon-chevron-left"></span>
+                       <span class="sr-only">Previous</span>
+                                 </a>
                     <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                              <span class="sr-only">Next</span>
+                          </a>
+
                 </div>
-            </div>
-            <!--<script>
-                $('.carousel').carousel()
-            </script>-->
+
         </header>
-
-        <div id='benefits' class='container'>
-            <div class="row">
-                <div class="col-md-2"><img src="proj/asets/images/mouse1600.png" alt="" width='50'>
-                    <p>Онлайн винаги ще бъде по-лесно</p>
-                </div>
-                <div class="col-md-2"><img src="proj/asets/images/truck-icon-31.png" alt="" width='50'>
-                    <p>Бърза доставка</p>
-                </div>
-                <div class="col-md-2"><img src="proj/asets/images/8338-200.png" alt="" width='50'>
-                    <p>30 дни право на връщане</p>
-                </div>
-                <div class="col-md-2"><img src="proj/asets/images/black-box-310220_640.png" alt="" width='50'>
-                    <p>Проверка на пратката</p>
-                </div>
-                <div class="col-md-2"><img src="proj/asets/images/notebook-256.png" alt="" width='50'>
-                    <p>Широка гама продукти</p>
-                </div>
-            </div>
-            <!--<ul>
-                <li><img src="proj/asets/images/mouse1600.png" alt=""  width='50'><span>Онлайн винаги ще бъде по-лесно</span></li>
-                <li><img src="proj/asets/images/truck-icon-31.png" alt=""  width='50'><span>Бърза доставка</span></li>
-                <li><img src="proj/asets/images/8338-200.png" alt=""  width='50'><span>30 дни право на връщане</span></li>
-                <li><img src="proj/asets/images/black-box-310220_640.png" alt=""  width='50'><span>Проверка на пратката</span></li>
-                <li><img src="proj/asets/images/notebook-256.png" alt=""  width='50'><span>Широка гама продукти</span></li>
-            </ul>-->
         </div>
-        <div id="content">
-            <hr>
-            <span>Топ брандове</span>
-            <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#popular">Най-популярните</a></li>
-                <li><a data-toggle="tab" href="#menu1">IT &amp Мобилни устройства</a></li>
-                <li><a data-toggle="tab" href="#menu2">Електроника и електроуреди</a></li>
-                <li><a data-toggle="tab" href="#menu3">Здраве и красота</a></li>
-            </ul>
-
-            <div class="tab-content">
-                <div id="popular" class="tab-pane fade in active">
-                    <ul>
-                        <li><a href="#acer"><img src="proj/asets/images/acer_logo.png" alt="" width='100'></a></li>
-                        <li><a href="#lego"><img src="proj/asets/images/LEGO.png" alt="" width='100'></a></li>
-                        <li><a href="#samsung"><img src="proj/asets/images/samsung-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#lenovo"><img src="proj/asets/images/lenovo_logo_detail.png" alt="" width='100'></a></li>
-                        <li><a href="#intel"><img src="proj/asets/images/Intel-s-Third-Embarrassment-of-the-Last-Decade-Chapter-I-2.jpg" alt="" width='100'></a></li>
-                        <li><a href="#bosch"><img src="proj/asets/images/bosch-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#htc"><img src="proj/asets/images/58ac4c5b0aaa10546adf2708.png" alt="" width='100'></a></li>
-                        <li><a href="#philips"><img src="proj/asets/images/Activity-Diagram.png" alt="" width='100'></a></li>
-                        <li><a href="#apple"><img src="proj/asets/images/apple-logo_318-40184.jpg" alt="" width='100'></a></li>
-                        <li><a href="#asus"><img src="proj/asets/images/asus-logo.jpg" alt="" width='100'></a></li>
-                        <li><a href="#lg"><img src="proj/asets/images/lg-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#dell"><img src="proj/asets/images/dell.jpg" alt="" width='100'></a></li>
-                    </ul>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <ul>
-                        <li><a href="#samsung"><img src="proj/asets/images/samsung-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#apple"><img src="proj/asets/images/apple-logo_318-40184.jpg" alt="" width='100'></a></li>
-                        <li><a href="#huawei"><img src="proj/asets/images/Huawei_logo_symbol.png" alt="" width='100'></a></li>
-                        <li><a href="#honor"><img src="proj/asets/images/Honor-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#nokia"><img src="proj/asets/images/nokia-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#lenovo"><img src="proj/asets/images/lenovo_logo_detail.png" alt="" width='100'></a></li>
-                        <li><a href="#blackberry"><img src="proj/asets/images/2000px-Blackberry_Logo.svg.png" alt="" width='100'></a></li>
-                        <li><a href="#alcatel"><img src="proj/asets/images/AlcatelOneTouch-Logo.jpg" alt="" width='100'></a></li>
-                        <li><a href="#windows"><img src="proj/asets/images/Microsoft-Logo-PNG-File.png" alt="" width='100'></a></li>
-                        <li><a href="#prestigio"><img src="proj/asets/images/prestigio-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#zte"><img src="proj/asets/images/34372_ZTE_Tomorrow_Never_Waits_FP_Wide.png" alt="" width='100'></a></li>
-                        <li><a href="#htc"><img src="proj/asets/images/58ac4c5b0aaa10546adf2708.png" alt="" width='100'></a></li>
-                    </ul>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                    <ul>
-                        <li><a href="#jvc"><img src="proj/asets/images/JVC_Logo.svg.png" alt="" width='100'></a></li>
-                        <li><a href="#zanussi"><img src="proj/asets/images/Zanussi_logo_text_wordmark.png" alt="" width='100' ></a></li>
-                        <li><a href="#samsung"><img src="proj/asets/images/samsung-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#gorenie"><img src="proj/asets/images/gorenje-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#pioner"><img src="proj/asets/images/1000px-Pioneer_logo.svg.png" alt="" width='100'></a></li>
-                        <li><a href="#bosch"><img src="proj/asets/images/bosch-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#braun"><img src="proj/asets/images/braun-logo.jpg" alt="" width='100'></a></li>
-                        <li><a href="#tp-link"><img src="proj/asets/images/tp_link_logo.png" alt="" width='100'></a></li>
-                        <li><a href="#lg"><img src="proj/asets/images/lg-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#canon"><img src="proj/asets/images/Canon_wordmark.svg.png" alt="" width='100'></a></li>
-                        <li><a href=#nikon ""><img src="proj/asets/images/free-vector-nikon-logo_090581_Nikon_logo.png" alt="" width='100'></a></li>
-                        <li><a href="#beko"><img src="proj/asets/images/Beko_logo.png" alt="" width='100'></a></li>
-                    </ul>
-                </div>
-                <div id="menu3" class="tab-pane fade">
-                    <ul>
-                        <li><a href="#garnier"><img src="proj/asets/images/garnier-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#nivea"><img src="proj/asets/images/Nivea_Logo.png" alt="" width='100'></a></li>
-                        <li><a href="#loreal"><img src="proj/asets/images/loreal_professionnel_67768.jpg" alt="" width='100'></a></li>
-                        <li><a href="#mayballine"><img src="proj/asets/images/Maybelline_New_York_logo_black_2.png" alt="" width='100'></a></li>
-                        <li><a href="#gillette"><img src="proj/asets/images/Gillette_Logo.jpg" alt="" width='100'></a></li>
-                        <li><a href="#scholl"><img src="proj/asets/images/logo (1).png" alt="" width='100'></a></li>
-                        <li><a href="#vichy"><img src="proj/asets/images/LOGO VICHY YOUR IDEAL SKIN.png" alt="" width='100'></a></li>
-                        <li><a href="#boss"><img src="proj/asets/images/1280px-Hugo-Boss-Logo.svg.png" alt="" width='100'></a></li>
-                        <li><a href="#bioderma"><img src="proj/asets/images/bioderma-logo.png" alt="" width='100'></a></li>
-                        <li><a href="#maxfactor"><img src="proj/asets/images/GPP-FB-LG-MaxFactor-Logo_2013.png" alt="" width='100'></a></li>
-                        <li><a href="#blend-a-med"><img src="proj/asets/images/Blend-a-med_logo.png" alt="" width='100'></a></li>
-                        <li><a href="#golden-rose"><img src="proj/asets/images/goldenrose.png" alt="" width='100'></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id='products'>
-
-        </div>
-        <script id='product-template' type='text/x-handlebars-template'>
-        <section id='productsItem'>
-            {{#each _productList}}
-            <article>
-                <img src='{{url}}' width='150'>
-                <div>
-                    <h5>{{name}}</h5>
-                    <p>{{price}}лв.</p>
-                </div>
-            </article>
-            {{/each}}
-        </section>
-        </script>
-    <footer>
-        <div id='footer-wrapper'>
-            <section>
-                <div class='footer'>
-                    <p>Услуги</p>
-                    <ul>
-                        <li><a href="" title="Проверка на пратката">Проверка на пратката</a></li>
-                        <li><a href="" title="30 дни право на връщане">30 дни право на връщане</a></li>
-                        <li><a href="" title="Гаранция и сервиз">Гаранция и сервиз</a></li>
-                        <li><a href="" title="Плащане на вноски">Плащане на вноски</a></li>
-                    </ul>
-                </div>
-                <div class='footer'>
-                    <p>Поръчки и доставка</p>
-                    <ul>
-                        <li><a href="" title="Моят акаунт">Моят акаунт</a></li>
-                        <li><a href="" title="Как да поръчам онлайн">Как да поръчам онлайн</a></li>
-                        <li><a href="" title="Доставка на поръчките">Доставка на поръчките</a></li>
-                        <li><a href="" title="Често задавани въпроси">Често задавани въпроси</a></li>
-                    </ul>
-                </div>
-                <div class='footer'>
-                    <p>Връзка с нас</p>
-                    <ul>
-                        <li><a href="" title="Проверка на пратката">Контакт</a></li>
-                        <li><a href="" title="Формуляр поправка на продукт">Формуляр поправка на продукт</a></li>
-                        <li><a href="" title="Формуляр връщане на продукт">Формуляр връщане на продукт</a></li>
-                        <li><a href="" title="Формуляр рекламации и жалба">Формуляр рекламации и жалба</a></li>
-                    </ul>
-                </div>
-                <div class='footer'>
-                    <p>e-shop.bg</p>
-                    <ul>
-                        <li><a href="" title="За връзка с нас">За връзка с нас</a></li>
-                        <li><a href="" title="Условия за ползване">Условия за ползване</a></li>
-                        <li><a href="" title="Лични данни">Лични данни</a></li>
-                        <li><a href="" title="Платформа за ОРС">Платформа за ОРС</a></li>
-                    </ul>
-                </div>
-                <div id='last' class='footer'>
-                    <p>Научи повече</p>
-                    <ul>
-                        <li><a href="" title="Проверка на пратката">e-shop Кариера</a></li>
-                        <li><a href="" title="30 дни право на връщане">Блог</a></li>
-                        <li><a href="" title="Гаранция и сервиз">Афилиейт програма</a></li>
-                        <li><a href="" title="Плащане на вноски">e-shop Marketplace</a></li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-    </footer>
+        <main>
+         
+            </main>
+                <footer>
+                    <div id='footer-wrapper'>
+                        <section>
+                            <div class='footer'>
+                                <p>Услуги</p>
+                                <ul>
+                                    <li><a href="" title="Проверка на пратката">Проверка на пратката</a></li>
+                                    <li><a href="" title="30 дни право на връщане">30 дни право на връщане</a></li>
+                                    <li><a href="" title="Гаранция и сервиз">Гаранция и сервиз</a></li>
+                                    <li><a href="" title="Плащане на вноски">Плащане на вноски</a></li>
+                                </ul>
+                            </div>
+                            <div class='footer'>
+                                <p>Поръчки и доставка</p>
+                                <ul>
+                                    <li><a href="" title="Моят акаунт">Моят акаунт</a></li>
+                                    <li><a href="" title="Как да поръчам онлайн">Как да поръчам онлайн</a></li>
+                                    <li><a href="" title="Доставка на поръчките">Доставка на поръчките</a></li>
+                                    <li><a href="" title="Често задавани въпроси">Често задавани въпроси</a></li>
+                                </ul>
+                            </div>
+                            <div class='footer'>
+                                <p>Връзка с нас</p>
+                                <ul>
+                                    <li><a href="" title="Проверка на пратката">Контакт</a></li>
+                                    <li><a href="" title="Формуляр поправка на продукт">Формуляр поправка на продукт</a></li>
+                                    <li><a href="" title="Формуляр връщане на продукт">Формуляр връщане на продукт</a></li>
+                                    <li><a href="" title="Формуляр рекламации и жалба">Формуляр рекламации и жалба</a></li>
+                                </ul>
+                            </div>
+                            <div class='footer'>
+                                <p>e-shop.bg</p>
+                                <ul>
+                                    <li><a href="" title="За връзка с нас">За връзка с нас</a></li>
+                                    <li><a href="" title="Условия за ползване">Условия за ползване</a></li>
+                                    <li><a href="" title="Лични данни">Лични данни</a></li>
+                                    <li><a href="" title="Платформа за ОРС">Платформа за ОРС</a></li>
+                                </ul>
+                            </div>
+                            <div id='last' class='footer'>
+                                <p>Научи повече</p>
+                                <ul>
+                                    <li><a href="" title="Проверка на пратката">e-shop Кариера</a></li>
+                                    <li><a href="" title="30 дни право на връщане">Блог</a></li>
+                                    <li><a href="" title="Гаранция и сервиз">Афилиейт програма</a></li>
+                                    <li><a href="" title="Плащане на вноски">e-shop Marketplace</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </footer>
     </div>
- </div>
+    </div>
 
 
 </body>

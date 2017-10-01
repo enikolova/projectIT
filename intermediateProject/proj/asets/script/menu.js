@@ -7,18 +7,16 @@ document.addEventListener('DOMContentLoaded',function(){
           menu.style.display='inline-block';
       })
        menu.addEventListener('mouseleave',function(){
-          menu.style.display='none';
+         setTimeout(function(){
+            menu.style.display='none';
+         },1000); 
       })
       x.addEventListener('mouseover',function(){
            menu.style.display='inline-block';
-          event.stopImmediatePropagation()
-           console.log(menu);
       });
       x.addEventListener('mouseout',function(){
           x.style.border='none';
            menu.style.display='none';
-           console.log(menu);
-          
       })
   })
 

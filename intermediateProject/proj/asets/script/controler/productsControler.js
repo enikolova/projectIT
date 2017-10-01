@@ -7,7 +7,7 @@ function getProducts(){
         xhr = new XMLHttpRequest();
 
 
-    xhr.open('GET','http://localhost/project/projectIT/intermediateProject/product.json', true);
+    xhr.open('GET','http://localhost/pr/projectIT/intermediateProject/product.json', true);
     xhr.send(null);
     xhr.addEventListener('load', function() {
         if (xhr.status == 200) {
