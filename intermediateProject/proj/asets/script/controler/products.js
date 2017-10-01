@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function hideMenu() {
         $('#aside-menu').css('visibility', 'hidden');
+        $('.menu').css('display', 'none');
         $('#myCarousel').css('display', 'none');
         document.getElementById('category').addEventListener('mouseover', function () {
             $('#aside-menu').css('visibility', 'visible')
@@ -16,8 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#aside-menu').on('mouseleave', function () {
             $('#aside-menu').css('visibility', 'hidden')
         })
+        $('.menu').on('mouseover', function () {
+            $('#aside-menu').css('visibility', 'visible');
 
-    }
+        })
+        $('.menu').on('mouseleave', function () {
+                 $('#aside-menu').css('visibility', 'hidden');
+           
+           
+        })
+    };
     getProducts().then(function (products) {
         var productsL = [];
         var pr = [];
@@ -44,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     hideMenu();
                     toysController();
                     break;
-                     case 'men':
+                case 'men':
                     hideMenu();
                     menController();
                     break;
@@ -56,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     hideMenu();
                     cameraController();
                     break;
-                    
+
                 default:
                     break;
             }
@@ -73,16 +82,16 @@ document.addEventListener('DOMContentLoaded', function () {
         function tvController() {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'tv'))
         }
-         function toysController() {
+        function toysController() {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'toys'))
         }
-         function menController() {
+        function menController() {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'men'))
         }
-         function womenController() {
+        function womenController() {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'women'))
         }
-         function cameraController() {
+        function cameraController() {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'camera'))
         }
 
