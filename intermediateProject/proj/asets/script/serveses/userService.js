@@ -8,6 +8,7 @@ var userList = (function () {
     }
     User.prototype.addToFavorites = function (item) {
         this.favorites.push(item);
+       localStorage.setItem('users', JSON.stringify(userList._users));
 
     }
     User.prototype.removeFromFavorites = function (item) {
@@ -32,15 +33,9 @@ var userList = (function () {
             localStorage.setItem('users', JSON.stringify(this._users));
         }
     }
-    UserList.prototype = Object.create(User.prototype);
-    UserList.prototype.constructor = UserList;
 
-    UserList.prototype.addToFavorites = function (item) {
-        UserList.prototype.addToFavorites.call(this, item);
-        localStorage.setItem('users', JSON.stringify(this._users));
-    }
     UserList.prototype.addUser = function (email, password) {
-        if ((password.trim().length > 5) && email) {
+        if (email) {
             if (!(this._users.some(user => user.email === email))) {
                 this._users.push(new User(password, email));
                 localStorage.setItem('users', JSON.stringify(this._users));
@@ -49,7 +44,7 @@ var userList = (function () {
     }
 
 
-    UserList.prototype.login = function (email,password) {
+    UserList.prototype.login = function (email, password) {
         return this._users.some(user => user.email === email &&
             user.password === password);
     }
