@@ -32,12 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var pr = [];
         productsList._productList = Array.prototype.slice.call(products.products, 0);
         productsL = Array.prototype.slice.call(products.products, 0);
-        pr = filterType(productsL, 'phone')
-        console.log(pr);
+        console.log(filterCompany(productsL,'phone'));
         function router() {
             var page = location.hash.slice(1);
-            console.log(location.hash);
-            console.log('rfcdfdf');
 
             switch (page) {
                 case 'home':
@@ -84,38 +81,39 @@ document.addEventListener('DOMContentLoaded', function () {
                         hideMenu();
                         tvController();
                     }
-            }}
-            function homeController() {
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm');
             }
-            function phoneController() {
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'phone'))
-            }
-            function tabletController() {
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'tablet'))
-            }
-            function tvController() {
-                console.log("hop");
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'tv'))
-            }
-            function toysController() {
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'toys'))
-            }
-            function menController() {
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'men'))
-            }
-            function womenController() {
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'women'))
-            }
-            function cameraController() {
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'camera'))
-            }
+        }
+        function homeController() {
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm');
+        }
+        function phoneController() {
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterProducts(productsL, 'phone', 'type'))
+        }
+        function tabletController() {
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterProducts(productsL, 'tablet', 'type'))
+        }
+        function tvController() {
+            console.log("hop");
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterProducts(productsL, 'tv', 'type'))
+        }
+        function toysController() {
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterProducts(productsL, 'toys', 'type'))
+        }
+        function menController() {
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterProducts(productsL, 'men', 'type'))
+        }
+        function womenController() {
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterProducts(productsL, 'women', 'type'))
+        }
+        function cameraController() {
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterProducts(productsL, 'camera', 'type'))
+        }
 
-            window.addEventListener('hashchange', router);
-            router();
-        }).catch(function (data) {
-            console.log(data);
-        });
+        window.addEventListener('hashchange', router);
+        router();
+    }).catch(function (data) {
+        console.log(data);
+    });
 
 
 
@@ -150,8 +148,20 @@ function putTemplate(templateUrl, products) {
 }
 
 
-function filterType(products, val) {
-    var prod = products.filter(pr => pr.type == val);
-    console.log(products);
+function filterProducts(products, val, type) {
+    var prod = products.filter(pr => pr[type] == val);
     return prod;
 }
+
+function filterCompany(products, val) {
+    var companies=[];
+    var prod = filterProducts(products, val,'type');
+    console.log(prod);
+    prod.forEach(function(element) {
+        if(!(companies.some(comp=>comp==element.companyName))){
+            companies.push(element.companyName);
+        }
+    });
+    return companies;
+}
+
