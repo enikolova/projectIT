@@ -429,7 +429,10 @@ body{
     margin-right: 2em;
      margin-left: 2em;
 }
+#productsItem aside{
+    float:left;
 
+}
 #productsItem{
     display:flex;
     flex-wrap: wrap;

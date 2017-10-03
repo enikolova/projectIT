@@ -1,14 +1,14 @@
 var userList = (function () {
-    var id = 1
+var userList=new UserList();
     function User(email, password) {
         this.password = password;
         this.email = email;
         this.favorites = [];
         this.shopingCart = [];
-        this.id = id++;
+        this.id = User.prototype.id++;
         this.isLoged = false;
     }
-
+    User.prototype.id  = userList._users.length == 0 ? 1 : userList._users.length + 1;
     User.prototype.addToFavorites = function (item) {
         this.favorites.push(item);
         localStorage.setItem('users', JSON.stringify(userList._users));
@@ -39,9 +39,9 @@ var userList = (function () {
     }
 
     UserList.prototype.addUser = function (email, password) {
-        if (email) {
+        if ((email && email.indexOf('@') != -1) && (password.trim().length > 4)) {
             if (!(this._users.some(user => user.email === email))) {
-                this._users.push(new User(email, password));
+                this._users.push(new User(email.trim(), password.trim()));
                 localStorage.setItem('users', JSON.stringify(this._users));
             }
         }
@@ -53,18 +53,20 @@ var userList = (function () {
             user.password === password)
         if (user) {
             user.isLoged = true;
+            localStorage.setItem('users', JSON.stringify(this._users));
             return user;
         } else {
             return null;
         }
     }
-    UserList.prototype.logout=function(id){
-        var user=this._users.find(user => user.id==id && user.isLoged==true);
-        if(user){
-            user.isLoged=false;
+    UserList.prototype.logout = function (id) {
+        var user = this._users.find(user => user.id == id && user.isLoged == true);
+        if (user) {
+            user.isLoged = false;
+            localStorage.setItem('users', JSON.stringify(this._users));
             return true;
-        }return false;
+        } return false;
     }
-
-    return new UserList();
+    userList.addUser("admin@gmail.com","123456");
+    return userList;
 })();

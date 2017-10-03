@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         })
         $('.menu').on('mouseleave', function () {
-                 $('#aside-menu').css('visibility', 'hidden');
-           
-           
+            $('#aside-menu').css('visibility', 'hidden');
+
+
         })
     };
     getProducts().then(function (products) {
@@ -36,70 +36,86 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(pr);
         function router() {
             var page = location.hash.slice(1);
+            console.log(location.hash);
+            console.log('rfcdfdf');
 
             switch (page) {
                 case 'home':
                     homeController();
                     break;
-                case 'phone':
+                case 'phone': {
                     hideMenu();
                     phoneController();
+                }
                     break;
                 case 'tablet':
-                    hideMenu();
-                    tabletController();
+                    {
+                        hideMenu();
+                        tabletController();
+                    }
                     break;
                 case 'toys':
-                    hideMenu();
-                    toysController();
+                    {
+                        hideMenu();
+                        toysController();
+                    }
                     break;
                 case 'men':
-                    hideMenu();
-                    menController();
+                    {
+                        hideMenu();
+                        menController();
+                    }
                     break;
                 case 'women':
-                    hideMenu();
-                    womenController();
+                    {
+
+                        hideMenu();
+                        womenController();
+                    }
                     break;
                 case 'camera':
-                    hideMenu();
-                    cameraController();
+                    {
+                        hideMenu();
+                        cameraController();
+                    }
                     break;
-
-                default:
-                    break;
+                case "tv":
+                    {
+                        hideMenu();
+                        tvController();
+                    }
+            }}
+            function homeController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm');
             }
-        }
-        function homeController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm');
-        }
-        function phoneController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'phone'))
-        }
-        function tabletController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'tablet'))
-        }
-        function tvController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'tv'))
-        }
-        function toysController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'toys'))
-        }
-        function menController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'men'))
-        }
-        function womenController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'women'))
-        }
-        function cameraController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'camera'))
-        }
+            function phoneController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'phone'))
+            }
+            function tabletController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'tablet'))
+            }
+            function tvController() {
+                console.log("hop");
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'tv'))
+            }
+            function toysController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'toys'))
+            }
+            function menController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'men'))
+            }
+            function womenController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'women'))
+            }
+            function cameraController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterType(productsL, 'camera'))
+            }
 
-        window.addEventListener('hashchange', router);
-        router();
-    }).catch(function (data) {
-        console.log(data);
-    });
+            window.addEventListener('hashchange', router);
+            router();
+        }).catch(function (data) {
+            console.log(data);
+        });
 
 
 
