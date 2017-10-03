@@ -18,16 +18,25 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault()
         var email = document.querySelectorAll("#login input.form-control")[0].value;
         var password = document.querySelectorAll("#login input.form-control")[1].value;
+        var user=userList.login(email,password)
+        if(user){
         $("#main,.footer").css("display","block");
         location.hash="#home";
         $("#mainPage").hide();
-        setTimeout(function() {
-            location.hash="";
-        }, 0);
+        // setTimeout(function() {
+        //     location.hash="";
+        // }, 0);
+        }
     })
 window.onunload=function(){
-     location.hash="";
-
+    location.hash="";
     location.href=location.href.slice(0,49)
 }
+
+$('body').on('keydown',function(event){
+if (event.which == 116 || event.which == 17) {
+    window.onunload();
+}
+})
+
 })
