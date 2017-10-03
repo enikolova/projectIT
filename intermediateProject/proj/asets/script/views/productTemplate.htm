@@ -1,3 +1,19 @@
+  <div style="float:left"><aside style="float:left"> 
+      <!--<ul>
+          <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Всички</label></li>
+          <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Нови</label></li>
+          <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Употребявани</label></li>
+      </ul>
+      <span>Производител:</span>-->
+        <ul>
+            {{#each companies}}
+   <li>
+       <input type="checkbox" name='companies'/><label for="companies">{{compName}}</label>
+   </li>
+    {{/each}}
+
+        </ul>
+    </aside>
 <section id='productsItem'>
     {{#each productsList}}
     <article>
@@ -9,3 +25,4 @@
     </article>
     {{/each}}
 </section>
+</div>
