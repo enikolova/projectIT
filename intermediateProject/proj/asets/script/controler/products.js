@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // $('.menu').css('display', 'none');
         // $('#myCarousel').css('display', 'none');
         document.getElementById('category').removeEventListener('mouseover', pokaji);
-<<<<<<< HEAD
+
             document.getElementById('category').removeEventListener ('mouseleave', skrii)
             $('#aside-menu').off('mouseover', pokaji)
             $('#aside-menu').off('mouseleave',skrii)
@@ -67,10 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
                          showMenu();
                         carouselController();
                         break;
-                    case 'phone': {
+                 case 'phone': {
                         hideMenu();
-                        tabletController();
+                        phoneController();
                     }
+                    break;
                 case 'tablet':
                     {
                         hideMenu();
@@ -142,6 +143,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
 
+        window.addEventListener('hashchange',router)
+        router();
+        });
+
         function loadTemplate(url) {
             return new Promise(function (resolve, reject) {
                 var xhr = new XMLHttpRequest();
@@ -204,4 +209,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return items;
     }
+
 

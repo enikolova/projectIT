@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded',function(){
 var slideIndex = 0;
 carousel();
 
@@ -8,10 +9,13 @@ function carousel() {
       x[i].style.display = "none"; 
     }
     slideIndex++;
-    if(x[slideIndex-1]!=undefined){
-        slideIndex++;
-    }
     if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
+    if(x[slideIndex-1]!=undefined)
+    x[slideIndex-1].style.display = "flex"; 
+    setTimeout(function(){
+        carousel();
+    },7000);
 }
-setInterval(carousel,3000);
+
+})
+

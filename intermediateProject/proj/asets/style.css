@@ -396,7 +396,8 @@ body{
 }
 
 .items{
-    display: flex;
+    display: none;
+    margin: 2%;
 }
 .items article{
     display: inline-block;
