@@ -2,27 +2,39 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     function hideMenu() {
-        $('#aside-menu').css('visibility', 'hidden');
+        $('#aside-menu').css('display', 'none');
         $('.menu').css('display', 'none');
         $('#myCarousel').css('display', 'none');
         document.getElementById('category').addEventListener('mouseover', function () {
-            $('#aside-menu').css('visibility', 'visible')
+            $('#aside-menu').css({
+                'display': 'flex',
+                'position':'absolute',
+
+            })
         });
         document.getElementById('category').addEventListener('mouseleave', function () {
-            $('#aside-menu').css('visibility', 'hidden')
+            $('#aside-menu').css({'display':'none','position':'static'})
         })
         $('#aside-menu').on('mouseover', function () {
-            $('#aside-menu').css('visibility', 'visible');
+           $('#aside-menu').css({
+                'display': 'flex',
+                'position':'absolute',
+                
+            })
         })
         $('#aside-menu').on('mouseleave', function () {
-            $('#aside-menu').css('visibility', 'hidden')
+            $('#aside-menu').css({'display':'none','position':'static'})
         })
         $('.menu').on('mouseover', function () {
-            $('#aside-menu').css('visibility', 'visible');
+           $('#aside-menu').css({
+                'display': 'flex',
+                'position':'absolute',
+                
+            })
 
         })
         $('.menu').on('mouseleave', function () {
-            $('#aside-menu').css('visibility', 'hidden');
+            $('#aside-menu').css({'display':'none','position':'static'})
 
 
         })
@@ -38,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             switch (page) {
                 case 'home':
+                $('#aside-menu').css({'display':'flex','position':'static'})
+                $('#myCarousel').css('display', 'inline-block');
                     homeController();
                     break;
                 case 'phone': {
