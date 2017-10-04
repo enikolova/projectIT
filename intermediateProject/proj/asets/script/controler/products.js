@@ -31,46 +31,46 @@ document.addEventListener('DOMContentLoaded', function () {
         // $('.menu').css('display', 'none');
         // $('#myCarousel').css('display', 'none');
         document.getElementById('category').removeEventListener('mouseover', pokaji);
-<<<<<<< HEAD
-            document.getElementById('category').removeEventListener ('mouseleave', skrii)
-            $('#aside-menu').off('mouseover', pokaji)
-            $('#aside-menu').off('mouseleave',skrii)
-            $('.menu').off('mouseover', pokaji)        
-                //     $('#aside-menu').css({
-            //         'display': 'flex',
-            //         'position': 'absolute',
+        document.getElementById('category').removeEventListener('mouseleave', skrii)
+        $('#aside-menu').off('mouseover', pokaji)
+        $('#aside-menu').off('mouseleave', skrii)
+        $('.menu').off('mouseover', pokaji)
+        //     $('#aside-menu').css({
+        //         'display': 'flex',
+        //         'position': 'absolute',
 
-            //     })
+        //     })
 
-            // })
-            $('.menu').off('mouseleave', skrii)
-            //     $('#aside-menu').css({
-            //         'display': 'flex',
-            //         'position': 'absolute',
-            //     // $('#aside-menu').css({'display':'none','position':'static'})
-            // });
-            // });
-        };
-        getProducts().then(function (products) {
-            var productsL = [];
-            var pr = [];
-            productsList._productList = Array.prototype.slice.call(products.products, 0);
-            productsL = Array.prototype.slice.call(products.products, 0);
-            console.log(filterCompany(productsL, 'phone'));
-            function router() {
-                var page = location.hash.slice(1);
+        // })
+        $('.menu').off('mouseleave', skrii)
+        //     $('#aside-menu').css({
+        //         'display': 'flex',
+        //         'position': 'absolute',
+        //     // $('#aside-menu').css({'display':'none','position':'static'})
+        // });
+        // });
+    };
+    getProducts().then(function (products) {
+        var productsL = [];
+        var pr = [];
+        productsList._productList = Array.prototype.slice.call(products.products, 0);
+        productsL = Array.prototype.slice.call(products.products, 0);
+        console.log(filterCompany(productsL, 'phone'));
+        function router() {
+            var page = location.hash.slice(1);
 
-                switch (page) {
-                    case 'home':
-                        // $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
-                        // $('#myCarousel').css('display', 'inline-block');
-                         showMenu();
-                        carouselController();
-                        break;
-                    case 'phone': {
-                        hideMenu();
-                        tabletController();
-                    }
+            switch (page) {
+                case 'home':
+                console.log("hahha");
+                    // $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
+                    // $('#myCarousel').css('display', 'inline-block');
+                    showMenu();
+                    carouselController();
+                    break;
+                case 'phone': {
+                    hideMenu();
+                    tabletController();
+                }
                 case 'tablet':
                     {
                         hideMenu();
@@ -135,12 +135,17 @@ document.addEventListener('DOMContentLoaded', function () {
         function cameraController() {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'), 'main')
         }
-        function carouselController(){
+        function carouselController() {
             homeController();
             var carouselItem = { firstItem: fiveRandomItem(productsL), secondItem: fiveRandomItem(productsL), thirdItem: fiveRandomItem(productsL), forthItem: fiveRandomItem(productsL), fifthItem: fiveRandomItem(productsL) };
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/carouselTemplate.htm', carouselItem, '#carousell')
-
+             $(".items").css("display","none");
         }
+        window.addEventListener('hashchange', router);
+            router();
+        }).catch(function (data) {
+            console.log(data);
+        });
 
         function loadTemplate(url) {
             return new Promise(function (resolve, reject) {
@@ -187,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             return { productsList: prod, companies: companies };
         }
-    });
+    
 
     function fiveRandomItem(products, type) {
         var items = [];
@@ -205,3 +210,17 @@ document.addEventListener('DOMContentLoaded', function () {
         return items;
     }
 
+    // var slideIndex = 0;
+
+    
+
+// function carousel() {
+//     var i;
+
+//     for (i = 0; i < x.length; i++) {
+//     $(".items")[""+i].css("display","flex");
+//     }
+   
+// setInterval(carousel, 3000);
+// }
+});
