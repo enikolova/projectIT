@@ -513,6 +513,26 @@ footer p{
 }
 
 
+#templatePr>aside{
+    margin: auto;
+    margin-left: 80px;
+    margin-top: 50px;
+    float:left;
+
+
+}
+#templatePr ul{
+   margin-bottom: 20px
+
+}
+#templatePr li{
+    margin-bottom: 3px
+}
+#templatePr label{
+margin-left: 5px;
+}
+
+
 
 
 

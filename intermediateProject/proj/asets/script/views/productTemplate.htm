@@ -1,28 +1,29 @@
-  <div style="float:left"><aside style="float:left"> 
-      <!--<ul>
-          <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Всички</label></li>
-          <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Нови</label></li>
-          <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Употребявани</label></li>
-      </ul>
-      <span>Производител:</span>-->
+<div id="templatePr">
+    <aside>
+        <ul>
+            <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Всички</label></li>
+            <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Нови</label></li>
+            <li><input type="checkbox" name="allNewOld"><label for="allNewOld">Употребявани</label></li>
+        </ul>
+        <span>Производител:</span>
         <ul>
             {{#each companies}}
-   <li>
-       <input type="checkbox" name='companies'/><label for="companies">{{compName}}</label>
-   </li>
-    {{/each}}
+            <li>
+                <input type="checkbox" name='companies' /><label for="companies">{{compName}}</label>
+            </li>
+            {{/each}}
 
         </ul>
     </aside>
-<section id='productsItem'>
-    {{#each productsList}}
-    <article>
-        <img src='{{url}}' width='150'>
-        <div>
-            <h5>{{name}}</h5>
-            <p>{{price}}лв.</p>
-        </div>
-    </article>
-    {{/each}}
-</section>
+    <section id='productsItem'>
+        {{#each productsList}}
+        <article>
+            <img src='{{url}}' width='150'>
+            <div>
+                <h5>{{name}}</h5>
+                <p>{{price}}лв.</p>
+            </div>
+        </article>
+        {{/each}}
+    </section>
 </div>
