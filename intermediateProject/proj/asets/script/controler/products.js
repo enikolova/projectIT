@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // $('.menu').css('display', 'none');
         // $('#myCarousel').css('display', 'none');
         document.getElementById('category').removeEventListener('mouseover', pokaji);
+
         document.getElementById('category').removeEventListener('mouseleave', skrii)
         $('#aside-menu').off('mouseover', pokaji)
         $('#aside-menu').off('mouseleave', skrii)
@@ -71,6 +72,49 @@ document.addEventListener('DOMContentLoaded', function () {
                     hideMenu();
                     tabletController();
                 }
+
+
+            document.getElementById('category').removeEventListener ('mouseleave', skrii)
+            $('#aside-menu').off('mouseover', pokaji)
+            $('#aside-menu').off('mouseleave',skrii)
+            $('.menu').off('mouseover', pokaji)        
+                //     $('#aside-menu').css({
+            //         'display': 'flex',
+            //         'position': 'absolute',
+
+            //     })
+
+            // })
+            $('.menu').off('mouseleave', skrii)
+            //     $('#aside-menu').css({
+            //         'display': 'flex',
+            //         'position': 'absolute',
+            //     // $('#aside-menu').css({'display':'none','position':'static'})
+            // });
+            // });
+        };
+        getProducts().then(function (products) {
+            var productsL = [];
+            var pr = [];
+            productsList._productList = Array.prototype.slice.call(products.products, 0);
+            productsL = Array.prototype.slice.call(products.products, 0);
+            console.log(filterCompany(productsL, 'phone'));
+            function router() {
+                var page = location.hash.slice(1);
+
+                switch (page) {
+                    case 'home':
+                        // $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
+                        // $('#myCarousel').css('display', 'inline-block');
+                         showMenu();
+                        carouselController();
+                        break;
+                 case 'phone': {
+                        hideMenu();
+                        phoneController();
+                    }
+                    break;
+
                 case 'tablet':
                     {
                         hideMenu();
@@ -147,6 +191,10 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(data);
         });
 
+        window.addEventListener('hashchange',router)
+        router();
+        
+
         function loadTemplate(url) {
             return new Promise(function (resolve, reject) {
                 var xhr = new XMLHttpRequest();
@@ -210,17 +258,5 @@ document.addEventListener('DOMContentLoaded', function () {
         return items;
     }
 
-    // var slideIndex = 0;
 
-    
-
-// function carousel() {
-//     var i;
-
-//     for (i = 0; i < x.length; i++) {
-//     $(".items")[""+i].css("display","flex");
-//     }
-   
-// setInterval(carousel, 3000);
-// }
 });
