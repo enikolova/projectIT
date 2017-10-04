@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 case 'home':
                 $('#aside-menu').css({'display':'flex','position':'static'})
                 $('#myCarousel').css('display', 'inline-block');
-                    homeController();
+                   carouselTemplate();
                     break;
                 case 'phone': {
                     hideMenu();
@@ -98,31 +98,35 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         function homeController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm');
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm',undefined,'main');
         }
         function phoneController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL,'phone'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL,'phone'),'main')
         }
         function tabletController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tablet'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tablet'),'main')
         }
         function tvController() {
             console.log("hop");
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tv'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tv'),'main')
         }
         function toysController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'toys'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'toys'),'main')
         }
         function menController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'men'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'men'),'main')
         }
         function womenController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'women'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'women'),'main')
         }
         function cameraController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'),'main')
         }
-
+        function carouselTemplate(){
+            homeController();
+            var carouselItem={firstItem:fiveRandomItem(productsL),secondItem:fiveRandomItem(productsL),thirdItem:fiveRandomItem(productsL),forthItem:fiveRandomItem(productsL),fifthItem:fiveRandomItem(productsL)};
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/carouselTemplate.htm',carouselItem,'#carousell')
+        }
         window.addEventListener('hashchange', router);
         router();
     }).catch(function (data) {
@@ -143,18 +147,17 @@ function loadTemplate(url) {
     });
 
 }
-function putTemplate(templateUrl, products) {
-    if (arguments.length == 1) {
+function putTemplate(templateUrl,products,where) {
+    if (arguments.length == 2 && !(products)) {
         loadTemplate(templateUrl).then(function (templateText) {
             var templateFunc = Handlebars.compile(templateText);
-            var container = document.querySelector('main');
+            var container = document.querySelector(where);
             container.innerHTML = templateFunc({});
         });
     } else {
         loadTemplate(templateUrl).then(function (templateText) {
             var templateFunc = Handlebars.compile(templateText);
-            var container = document.querySelector('main');
-            console.log(document.querySelector('main'))
+            var container = document.querySelector(where);
             container.innerHTML = templateFunc( products);
         });
     }
@@ -179,3 +182,19 @@ function filterCompany(products, val) {
     return {productsList:prod,companies:companies};
 }
 
+function fiveRandomItem(products,type){
+    var items=[];
+    if(arguments.length==1){
+        for (var index=0;index<5;index++){
+            items.push(products[Math.floor(Math.random()*products.length)]);
+        }
+    }else{
+        var prod=filterProducts(products,type,'type');
+        for (var index=0;index<5;index++){
+            items.push(prod[Math.floor(Math.random()*prod.length)]);
+        }
+    }
+
+    return items;
+}
+$('.carousel').carousel()
