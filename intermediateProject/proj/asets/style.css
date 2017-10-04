@@ -370,6 +370,7 @@ body{
     clear: left;
     display: block;
     border: 0.5px solid lightgray;
+    box-sizing: border-box;
     
 }
 #content>span{
@@ -392,6 +393,14 @@ body{
     display: inline-block;
     width: 75%;
     
+}
+
+.item{
+    display: flex;
+}
+.item article{
+    display: inline-block;
+    width:15%;
 }
 
 #benefits{
@@ -476,6 +485,7 @@ footer>ul{
     float:left;
     margin: 20px auto;
     margin-left: 10px;
+   
     /*display: none;*/
 }
 .footer li{

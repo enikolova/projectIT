@@ -76,6 +76,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         hideMenu();
                         tabletController();
                     }
+                case 'tablet':
+                    {
+                        hideMenu();
+                        tabletController();
+                    }
                     break;
                 case 'toys':
                     {
@@ -109,88 +114,99 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
             }
         }
+
         function homeController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm');
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', undefined, 'main');
         }
         function phoneController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'phone'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'phone'), 'main')
         }
         function tabletController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tablet'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tablet'), 'main')
         }
         function tvController() {
             console.log("hop");
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tv'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tv'), 'main')
         }
         function toysController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'toys'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'toys'), 'main')
         }
         function menController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'men'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'men'), 'main')
         }
         function womenController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'women'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'women'), 'main')
         }
         function cameraController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'))
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'), 'main')
+        }
+        function carouselTemplate() {
+            homeController();
+            var carouselItem = { firstItem: fiveRandomItem(productsL), secondItem: fiveRandomItem(productsL), thirdItem: fiveRandomItem(productsL), forthItem: fiveRandomItem(productsL), fifthItem: fiveRandomItem(productsL) };
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/carouselTemplate.htm', carouselItem, '#carousell')
+
         }
 
-        window.addEventListener('hashchange', router);
-        router();
+        function loadTemplate(url) {
+            return new Promise(function (resolve, reject) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url, true);
+                xhr.onload = function () {
+                    resolve(xhr.responseText);
+                }
+                xhr.send(null);
+            })
+        }
+        function putTemplate(templateUrl, products, where) {
+            if (arguments.length == 2 && !(products)) {
+                loadTemplate(templateUrl).then(function (templateText) {
+                    var templateFunc = Handlebars.compile(templateText);
+                    var container = document.querySelector(where);
+                    container.innerHTML = templateFunc({});
+                });
+            } else {
+                loadTemplate(templateUrl).then(function (templateText) {
+                    var templateFunc = Handlebars.compile(templateText);
+                    var container = document.querySelector(where);
+                    container.innerHTML = templateFunc(products);
+
+                });
+            }
+
+        }
 
 
-    }).catch(function (data) {
-        console.log(data);
+        function filterProducts(products, val, type) {
+            var prod = products.filter(pr => pr[type] == val);
+            return prod;
+        }
+
+        function filterCompany(products, val) {
+            var companies = [];
+            var prod = filterProducts(products, val, 'type');
+            console.log(prod);
+            prod.forEach(function (element) {
+                if (!(companies.some(comp => comp.compName == element.companyName))) {
+                    companies.push({ compName: element.companyName });
+                }
+            });
+            return { productsList: prod, companies: companies };
+        }
     });
 
-
-
-
-    function loadTemplate(url) {
-        return new Promise(function (resolve, reject) {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', url, true);
-            xhr.onload = function () {
-                resolve(xhr.responseText);
-            }
-            xhr.send(null);
-        });
-
-    }
-    function putTemplate(templateUrl, products) {
+    function fiveRandomItem(products, type) {
+        var items = [];
         if (arguments.length == 1) {
-            loadTemplate(templateUrl).then(function (templateText) {
-                var templateFunc = Handlebars.compile(templateText);
-                var container = document.querySelector('main');
-                container.innerHTML = templateFunc({});
-            });
+            for (var index = 0; index < 5; index++) {
+                items.push(products[Math.floor(Math.random() * products.length)]);
+            }
         } else {
-            loadTemplate(templateUrl).then(function (templateText) {
-                var templateFunc = Handlebars.compile(templateText);
-                var container = document.querySelector('main');
-                console.log(document.querySelector('main'))
-                container.innerHTML = templateFunc(products);
-            });
+            var prod = filterProducts(products, type, 'type');
+            for (var index = 0; index < 5; index++) {
+                items.push(prod[Math.floor(Math.random() * prod.length)]);
+            }
         }
 
+        return items;
     }
-
-
-    function filterProducts(products, val, type) {
-        var prod = products.filter(pr => pr[type] == val);
-        return prod;
-    }
-
-    function filterCompany(products, val) {
-        var companies = [];
-        var prod = filterProducts(products, val, 'type');
-        console.log(prod);
-        prod.forEach(function (element) {
-            if (!(companies.some(comp => comp.compName == element.companyName))) {
-                companies.push({ compName: element.companyName });
-            }
-        });
-        return { productsList: prod, companies: companies };
-    }
-});
 
