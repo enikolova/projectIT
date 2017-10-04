@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
             homeController();
             var carouselItem={firstItem:fiveRandomItem(productsL),secondItem:fiveRandomItem(productsL),thirdItem:fiveRandomItem(productsL),forthItem:fiveRandomItem(productsL),fifthItem:fiveRandomItem(productsL)};
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/carouselTemplate.htm',carouselItem,'#carousell')
+           
         }
         window.addEventListener('hashchange', router);
         router();
@@ -197,4 +198,4 @@ function fiveRandomItem(products,type){
 
     return items;
 }
-$('.carousel').carousel()
+

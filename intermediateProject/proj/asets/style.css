@@ -395,13 +395,15 @@ body{
     width: 75%;
     
 }
-#carouselExampleControls{
-    width: 75%;
-     display: inline-block;
-}
-#carouselExampleControls .carousel-item{
+
+.item{
     display: flex;
 }
+.item article{
+    display: inline-block;
+    width:15%;
+}
+
 #benefits{
     margin-left:8%;
       margin-bottom: 3em;
