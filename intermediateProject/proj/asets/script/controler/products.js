@@ -63,7 +63,7 @@ function pokaji(){
                         // $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
                         // $('#myCarousel').css('display', 'inline-block');
                          showMenu();
-                        homeController();
+                        carouselController();
                         break;
                     case 'phone': {
                         hideMenu();
@@ -134,7 +134,7 @@ function pokaji(){
         function cameraController() {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'),'main')
         }
-        function carouselTemplate(){
+        function carouselController(){
             homeController();
             var carouselItem={firstItem:fiveRandomItem(productsL),secondItem:fiveRandomItem(productsL),thirdItem:fiveRandomItem(productsL),forthItem:fiveRandomItem(productsL),fifthItem:fiveRandomItem(productsL)};
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/carouselTemplate.htm',carouselItem,'#carousell')

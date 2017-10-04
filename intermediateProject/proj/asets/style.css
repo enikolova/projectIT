@@ -395,12 +395,12 @@ body{
     
 }
 
-.item{
+.items{
     display: flex;
 }
-.item article{
+.items article{
     display: inline-block;
-    width:15%;
+    width:18%;
 }
 
 #benefits{
