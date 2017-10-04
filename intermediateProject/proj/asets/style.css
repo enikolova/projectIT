@@ -402,6 +402,7 @@ body{
 .items article{
     display: inline-block;
     width:18%;
+    margin-left: 30px;
 }
 
 #benefits{
