@@ -1,5 +1,5 @@
 var userList = (function () {
-var userList=new UserList();
+    var userList = new UserList();
     function User(email, password) {
         this.password = password;
         this.email = email;
@@ -8,7 +8,7 @@ var userList=new UserList();
         this.id = User.prototype.id++;
         this.isLoged = false;
     }
-    User.prototype.id  = userList._users.length == 0 ? 1 : userList._users.length + 1;
+    User.prototype.id = userList._users.length == 0 ? 1 : userList._users.length + 1;
     User.prototype.addToFavorites = function (item) {
         this.favorites.push(item);
         localStorage.setItem('users', JSON.stringify(userList._users));
@@ -67,6 +67,6 @@ var userList=new UserList();
             return true;
         } return false;
     }
-    userList.addUser("admin@gmail.com","123456");
+    userList.addUser("admin@gmail.com", "123456");
     return userList;
 })();

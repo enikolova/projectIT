@@ -1,6 +1,5 @@
 {
     "products": [
-        
         {
             "type": "phone",
             "name": "Смартфон Samsung Galaxy S8, 64GB, 4G, Midnight Black",
@@ -9,7 +8,8 @@
             "price": 1299,
             "color": "Midnight Black",
             "description": "Открийте впечатляващите възможности на Galaxy S8, даващи началото на нов начин за опознаване на света. Камера Камера, създадена за всеки момент Улови живота в мига с камерите на Galaxy S8 и S8+. 12-мегапикселовата задна камера и 8-мегапикселовата предна камера са толкова точни и бързи, че няма да пропуснеш нито един момент, било то през деня или през нощта. Сигурност Опростена сигурност Любопитните очи не са проблем, когато имаш сканиране на ириса в Galaxy S8 и S8+. Всеки ирис, дори на един и същ човек, има уникална шарка и е почти невъзможен за имитиране. Това означава, че със сканирането на ириса телефонът ти и съдържанието му се отварят само за твоите очи. А когато трябва да го отключиш наистина бързо, разпознаването на лицe е удобна опция.*Ирисът е оцветената, пръстеновидна част на окото ти. ",
-            "isNew": false
+            "isNew": false,
+            "id": 1
         },
         {
             "type": "phone",
@@ -19,7 +19,8 @@
             "price": 419,
             "color": "Gold",
             "description": "Huawei P9 Lite Превърнете мечтите в реалност с Huawei P9 Lite, наследник на P8 Lite. P9 lite се отличава с редица иновативни хардуерни ъпгрейди в модерен и тънък дизайн. Вземете следващо поколение смартфон, който съчетава в перфектна хармония динамичен дизайн и спиращ дъха стил, на конкурентна цена. СУПЕР ТЪНЪК. С подобреното съотношението на екрана и тялото от 76,4%, Huawei P9 Lite със сигурност ще ви впечатли със своят елегантен дизайн и метален панел. Екранът е 5.2 инчов FHD с по-широка цветова гама, по-тънка рамка, и повече детайли, а за деликатния завършек на телефона се грижи алуминиевата рамка.",
-            "isNew": true
+            "isNew": true,
+            "id": 2
         },
         {
             "type": "phone",
@@ -29,7 +30,8 @@
             "price": 299,
             "color": "Black",
             "description": "Huawei P8 Lite разполага с нов дизайн, като всеки детайл е създаден да подобри производителността ви. 5-инчов IPS дисплей подобрява вида на изображенията и ъгъла на визуализиране.",
-            "isNew": true
+            "isNew": true,
+            "id": 3
         },
         {
             "type": "phone",
@@ -39,7 +41,8 @@
             "price": 1689,
             "color": "Black",
             "description": "iPhone 7 подобрява съществено iPhone извижяването, предлагайки нови модерни системи на камерите. Най-добрата производителност и автономия на батерията до момента, предлагана от iPhone. Впечатляващи стерео говорители. Дизайн Водоустойчивост Камера iPhone 7 Камера iPhone 7 Plus Два обектива. Уникален резултат. Дисплей Retina HD Чип A10 Fusion Най-мощният процесор за смартфон на всички времена Аудио",
-            "isNew": true
+            "isNew": true,
+            "id": 4
         },
         {
             "type": "phone",
@@ -49,7 +52,8 @@
             "price": 469,
             "color": "Blue Silver",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 5
         },
         {
             "type": "phone",
@@ -59,7 +63,8 @@
             "price": 209,
             "color": "White",
             "description": "Жалко е, когато ярките детайли не остават запечатани на снимките заради оскъдна осветеност. Двойната светкавица на Huawei Y5II се представя изключително добре в слабо осветени условия. 8 мегапикселовата камера и F2.0 блендата правят снимки, които създават усещане за професионални. Автоматичната цветова корекция създадена за портретна фотография заедно с 2 мегапикселовата предна камера правят възможни за притежателите на този модел едни от най-добрите селфи кадри. Направи портретни снимки, които се открояват и сияят! Лесен достъп. Всъщност, по-лесен отвсякога! Уморен ли си от безкрайни менюта, когато искаш просто да споделиш вълнуващ момент? Функцията за лесен достъп съкращава пътя до исканото от теб съдържание. С едно единствено докосване, двойно, или като докоснеш със задържане можеш моментално да стигнеш до предварително зададените от теб меню или апликация. Виж света със скоростта на светлината и кристална яснота на образа Huawei Y5II предизвиква с красив 5 инчов HD LCD дисплей, доставящ чиста и ярка картина - истински празник за окото. Всъщност нещо повече от изолирана наслада за визуалните сетива. 4-ядреният процесор 1.3GHz CPU архивира графичната производителност с достатъчно мощност, така че качеството на изображението да стига до очите дори и на най-бързо сменящият картините на дисплея си потребител. Нова екосистема с фокус сигурност и ефикасност Android 5.1 базираният Huawei Y5II с операционна система обновена до EMUI3.1 създава усещане за напълно освежена функционалност и интерфейс. Паметта и апликациите са чисто подредени и лесни за откриване посредством високо ефективната Timeline функция. Архитектурата на менютата гарантира по-сигурно и гладко преживяване. Виж повече",
-            "isNew": true
+            "isNew": true,
+            "id": 6
         },
         {
             "type": "phone",
@@ -69,7 +74,8 @@
             "price": 74,
             "color": "Black",
             "description": "Новата Nokia 216 Dual SIM съчетава чудесни развлекателни функции и модерен дизайн. Насладете се на високо качество на гласови повиквания, изключителен живот на батерията, вградено FM Radio, MP3 и видео плейър, с до 18 часа време за разговори и до 19 дни стендбай режим",
-            "isNew": true
+            "isNew": true,
+            "id": 7
         },
         {
             "type": "phone",
@@ -79,7 +85,8 @@
             "price": 268,
             "color": "Silver",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 8
         },
         {
             "type": "phone",
@@ -89,7 +96,8 @@
             "price": 749,
             "color": "Space Gray",
             "description": "",
-            "isNew": false
+            "isNew": false,
+            "id": 9
         },
         {
             "type": "phone",
@@ -99,7 +107,8 @@
             "price": 188,
             "color": "Jet Black",
             "description": "",
-            "isNew": false
+            "isNew": false,
+            "id": 10
         },
         {
             "type": "phone",
@@ -109,7 +118,8 @@
             "price": 229,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 11
         },
         {
             "type": "phone",
@@ -119,7 +129,8 @@
             "price": 186,
             "color": "Midnight Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 12
         },
         {
             "type": "phone",
@@ -129,7 +140,8 @@
             "price": 1099,
             "color": "Silver",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 13
         },
         {
             "type": "phone",
@@ -139,7 +151,8 @@
             "price": 429,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 14
         },
         {
             "type": "phone",
@@ -149,7 +162,8 @@
             "price": 209,
             "color": "Silver",
             "description": "",
-            "isNew": false
+            "isNew": false,
+            "id": 15
         },
         {
             "type": "phone",
@@ -159,7 +173,8 @@
             "price": 448,
             "color": "Grey",
             "description": "",
-            "isNew": false
+            "isNew": false,
+            "id": 16
         },
         {
             "type": "phone",
@@ -169,7 +184,8 @@
             "price": 479,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 17
         },
         {
             "type": "phone",
@@ -179,7 +195,8 @@
             "price": 435,
             "color": "Lime Light",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 18
         },
         {
             "type": "phone",
@@ -189,7 +206,8 @@
             "price": 389,
             "color": "Metal Grey",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 19
         },
         {
             "type": "phone",
@@ -199,7 +217,8 @@
             "price": 555,
             "color": "Brilliant Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 20
         },
         {
             "type": "phone",
@@ -209,7 +228,8 @@
             "price": 989,
             "color": "Gold",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 21
         },
         {
             "type": "phone",
@@ -219,7 +239,8 @@
             "price": 1829,
             "color": "Gold",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 22
         },
         {
             "type": "tablet",
@@ -229,7 +250,8 @@
             "price": 145,
             "color": "Black",
             "description": "Прекрасен дисплей, за вашето удоволствие. Работете или се забавлявайте на IPS екран с висока резолюция (1024 x 600), 7 размер, на модел Tab3 7. С IPS технология, лесно разглеждайте и споделяйте съдържанието на екрана. Две необикновени камери С Tab3 7, се възползвайте от две камери за заснемане на вашите спомени. Използвайте предната Visio камера с 0,3 мегапиксела резолюция за разговори и селфита. Или заснемайте снимки и клипове с зашеметяващата основна камера с резолюция 2 мегапискела. Винаги на ваше разположение Благодарение на батерията с капацитет от 3450 mAh, този таблет осигурява до 10 часа работа с едно зареждане. GPS Никога няма да се изгубите, тъй като може да работи и без наличието на интернет. Dolby Audio Dolby позволява подобрен звук с по-голям обем, естествен и без изкривявания.",
-            "isNew": false
+            "isNew": false,
+            "id": 23
         },
         {
             "type": "tablet",
@@ -239,7 +261,8 @@
             "price": 349,
             "color": "Dark Gray",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 24
         },
         {
             "type": "tablet",
@@ -249,7 +272,8 @@
             "price": 449,
             "color": "Red",
             "description": "Операционна система: Android 6.0 Marshmallow Дисплей: 10.1 (1920x1200) IPS тъчскрийн Процесор: 4x Cortex-A53 (1.5 GHz) Вградена памет: 64 GB eMMC Оперативна памет: 2 GB DDR3L Безжични комуникации: Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Hotspot, Bluetooth 4.0, GPS Гаранционен срок: 24 месеца гаранция",
-            "isNew": true
+            "isNew": true,
+            "id": 25
         },
         {
             "type": "tablet",
@@ -259,7 +283,8 @@
             "price": 221,
             "color": "Black",
             "description": "",
-            "isNew": false
+            "isNew": false,
+            "id": 26
         },
         {
             "type": "tablet",
@@ -269,7 +294,8 @@
             "price": 2415,
             "color": "Silver",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 27
         },
         {
             "type": "tablet",
@@ -279,9 +305,9 @@
             "price": 199,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 28
         },
-       
         {
             "type": "tv",
             "name": "Телевизор LED Smart LG, 43(108 cм), 43UH7507, 4K Ultra HD",
@@ -290,7 +316,8 @@
             "price": 1099,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 29
         },
         {
             "type": "tv",
@@ -300,7 +327,8 @@
             "price": 1559,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 30
         },
         {
             "type": "tv",
@@ -310,7 +338,8 @@
             "price": 2699,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 31
         },
         {
             "type": "tv",
@@ -320,7 +349,8 @@
             "price": 768,
             "color": "Black",
             "description": "",
-            "isNew": false
+            "isNew": false,
+            "id": 32
         },
         {
             "type": "tv",
@@ -330,7 +360,8 @@
             "price": 449,
             "color": "Grey",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 33
         },
         {
             "type": "tv",
@@ -340,9 +371,10 @@
             "price": 585,
             "color": "Black",
             "description": "",
-            "isNew": false
+            "isNew": false,
+            "id": 34
         },
-         {
+        {
             "type": "women",
             "name": "J.Lo by Jennifer Lopez Чанта в черно и перленобежово",
             "url": "proj/asets/images/productImages/jlo.jpg",
@@ -350,7 +382,8 @@
             "price": 101,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 35
         },
         {
             "type": "women",
@@ -360,7 +393,8 @@
             "price": 49,
             "color": "Yellow",
             "description": "Страхотна жълта дамска чанта от еко кожа. Закопчаване с цип и капак с копче,има практични джобчета и вътрешни прегради, една фиксирана и една допълнителна дълга регулираща се дръжка. Състав: Еко кожа.. Размери:  Дължина: 34см. Височина: 30 см. Широчина:17 см.",
-            "isNew": true
+            "isNew": true,
+            "id": 36
         },
         {
             "type": "women",
@@ -370,7 +404,8 @@
             "price": 75,
             "color": "Gold",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 37
         },
         {
             "type": "women",
@@ -380,7 +415,8 @@
             "price": 68,
             "color": "White",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 38
         },
         {
             "type": "women",
@@ -390,7 +426,8 @@
             "price": 113,
             "color": "Pink",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 39
         },
         {
             "type": "women",
@@ -400,7 +437,8 @@
             "price": 26,
             "color": "Purple",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 40
         },
         {
             "type": "men",
@@ -410,7 +448,8 @@
             "price": 75,
             "color": "Grey",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 41
         },
         {
             "type": "men",
@@ -420,9 +459,9 @@
             "price": 92,
             "color": "Grey",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 42
         },
-
         {
             "type": "men",
             "name": "Alcott, Кецове с връзки, Петрол / Тъмносин",
@@ -431,8 +470,10 @@
             "price": 49,
             "color": "Dark Blue",
             "description": "",
-            "isNew": true
-        },{
+            "isNew": true,
+            "id": 43
+        },
+        {
             "type": "men",
             "name": "Zee Lane Denim, Тъмносиня вталена риза на бели точки",
             "url": "proj/asets/images/productImages/r1.jpg",
@@ -440,7 +481,8 @@
             "price": 38,
             "color": "Dark Blue",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 44
         },
         {
             "type": "men",
@@ -450,7 +492,8 @@
             "price": 123,
             "color": "Dark Grey",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 45
         },
         {
             "type": "men",
@@ -460,9 +503,10 @@
             "price": 146,
             "color": "White",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 46
         },
-          {
+        {
             "type": "toys",
             "name": "Плюшена играчка Mappy Fluffy Friends, Мече, Сива",
             "url": "proj/asets/images/productImages/bear.jpg",
@@ -470,7 +514,8 @@
             "price": 32,
             "color": "Grey",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 47
         },
         {
             "type": "toys",
@@ -480,7 +525,8 @@
             "price": 46,
             "color": "Pink",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 48
         },
         {
             "type": "toys",
@@ -490,7 +536,8 @@
             "price": 39,
             "color": "Braun",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 49
         },
         {
             "type": "toys",
@@ -500,7 +547,8 @@
             "price": 21,
             "color": "Grey",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 50
         },
         {
             "type": "toys",
@@ -510,7 +558,8 @@
             "price": 48,
             "color": "",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 51
         },
         {
             "type": "toys",
@@ -520,7 +569,8 @@
             "price": 18,
             "color": "",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 52
         },
         {
             "type": "toys",
@@ -530,9 +580,10 @@
             "price": 41,
             "color": "",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 53
         },
-         {
+        {
             "type": "camera",
             "name": "Дигитален фотоапарат Canon SX710HS, 20.3MP, Черен",
             "url": "proj/asets/images/productImages/canon1.jpg",
@@ -540,9 +591,10 @@
             "price": 568,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 54
         },
-         {
+        {
             "type": "camera",
             "name": "Дигитален фотоапарат Nikon COOLPIX WATERPROOF W100, Раница, Жълт + Карта 8 GB",
             "url": "proj/asets/images/productImages/nikon1.jpg",
@@ -550,9 +602,10 @@
             "price": 386,
             "color": "Yellow",
             "description": "Споделяйте мигновено всички забавления през ваканцията с водоустойчивия COOLPIX W100. С него можете да влизате под вода¹ до 10 м. Освен това той е устойчив на удар² при падане от височина до 1,8 м, на студ до -10°C и на прах¹, което означава, че е проектиран да издържа на всички неблагоприятни въздействия, на които е изложен в ежедневието. Заснемайте висококачествени снимки и Full HD видеоклипове със стереозвук и прехвърляйте изображенията автоматично чрез приложението SnapBridge към смарт устройството си за лесно споделяне и съхранение. Специалните бутони за работа с едно докосване и удобният интерфейс, който включва дори отделно меню за деца, улесняват използването на фотоапарата. 13,2-мегапикселовият COOLPIX W100 прави снимането лесно за всеки. ИЗДРЪЖЛИВОСТ, ОСИГУРЯВАЩА СПОКОЙСТВИЕ Този фотоапарат може да понесе всички въздействия, на които е възможно да бъде изложен в ежедневието. Той е водоустойчив¹ до дълбочина от 10 м и издържа на падане² от височина 1,8 м, така че не е нужно да се притеснявате, че ще се повреди от удар или капки в басейна",
-            "isNew": true
+            "isNew": true,
+            "id": 55
         },
-         {
+        {
             "type": "camera",
             "name": "Видеокамера Sony Handycam® HDR-CX900E, Full HD, Wi-Fi, Черна",
             "url": "proj/asets/images/productImages/sony1.jpg",
@@ -560,9 +613,10 @@
             "price": 2199,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 56
         },
-         {
+        {
             "type": "camera",
             "name": "Видеокамера JVC Quad-Proof RX GZ-RX645AEU, Full HD, Wi-Fi, Синя",
             "url": "proj/asets/images/productImages/jvc1.jpg",
@@ -570,9 +624,10 @@
             "price": 749,
             "color": "Blue",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 57
         },
-         {
+        {
             "type": "camera",
             "name": "Видеокамера Sony HDRPJ410B с вграден проектор, Full HD, Черна",
             "url": "proj/asets/images/productImages/sony2.jpg",
@@ -580,8 +635,8 @@
             "price": 859,
             "color": "Black",
             "description": "",
-            "isNew": true
+            "isNew": true,
+            "id": 58
         }
-    
     ]
 }
