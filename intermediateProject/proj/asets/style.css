@@ -221,7 +221,24 @@ body{
     box-shadow: 0px 0px 5px 0px;
     padding: 10px;
 }
+
+#search li{
+    line-height: 2;
+    text-align: center
+}
+#search ul{
+    z-index: 0;
+
+}
+  
+#search form{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
 #search{
+    color: gray;
+    font-size: 1em;
     display: inline-block;
     position: absolute;
     top:36px;
@@ -247,7 +264,7 @@ body{
     height: 40px;
     width: 100%;
     display: flex;
-    z-index: 100;
+    z-index: -1;
 
 }
 #category{
@@ -393,6 +410,7 @@ body{
 
 }
 #myCarousel{
+    z-index: -2;
     margin-top:-15px;
     display: inline-block;
     width: 75%;
