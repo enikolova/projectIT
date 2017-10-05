@@ -17,13 +17,14 @@
     </aside>
     <section id='productsItem'>
         {{#each productsList}}
-        <article>
+       <a href={{#id}}> <article >
             <img src='{{url}}' width='150'>
             <div>
                 <h5>{{name}}</h5>
                 <p>{{price}}лв.</p>
             </div>
         </article>
+        </a>
         {{/each}}
     </section>
 </div>

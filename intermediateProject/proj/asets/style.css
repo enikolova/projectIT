@@ -443,6 +443,13 @@ body{
     float:left;
 
 }
+#productsItem>a{
+    width: 25%;
+    margin-bottom: 20px;
+}
+#productsItem div{
+    width: 200px;
+}
 #productsItem{
     display:flex;
     flex-wrap: wrap;

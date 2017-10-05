@@ -13,7 +13,9 @@ function getProducts(){
         if (xhr.status == 200) {
             var response = xhr.responseText;
             var products = JSON.parse(response);
-            console.log(products);
+            // console.log(response);
+            // console.log()
+            // console.log(JSON.stringify(products));
             resolve(products);
         } else {
             reject({ error: xhr.status, errorText: xhr.statusText });

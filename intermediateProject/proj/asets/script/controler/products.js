@@ -73,12 +73,16 @@ document.addEventListener('DOMContentLoaded', function () {
     getProducts().then(function (products) {
         var productsL = [];
         var pr = [];
-        productsList._productList = Array.prototype.slice.call(products.products, 0);
+        productSklad._productList = Array.prototype.slice.call(products.products, 0);
         productsL = Array.prototype.slice.call(products.products, 0);
         console.log(filterCompany(productsL, 'phone'));
         function router() {
             var page = location.hash.slice(1);
-
+            console.log(page);
+            if (!(isNaN(page))) {
+            console.log(page);
+              productController();
+            } else {
             switch (page) {
                 case 'home':
                     // $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
@@ -130,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
             }
         }
+         }
 
         function homeController() {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', undefined, 'main');
@@ -162,6 +167,10 @@ document.addEventListener('DOMContentLoaded', function () {
             putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/carouselTemplate.htm', carouselItem, '#carousell')
             $(".items").css("display", "none");
         }
+     function productController() {
+
+            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', filterProducts(productSklad._productList,page,"id",), 'main')
+        }
         window.addEventListener('hashchange', router);
         router();
     }).catch(function (data) {
@@ -170,6 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function loadTemplate(url) {
         return new Promise(function (resolve, reject) {
             var xhr = new XMLHttpRequest();
+            console.log("load")
             xhr.open('GET', url, true);
             xhr.onload = function () {
                 resolve(xhr.responseText);
@@ -182,12 +192,14 @@ document.addEventListener('DOMContentLoaded', function () {
             loadTemplate(templateUrl).then(function (templateText) {
                 var templateFunc = Handlebars.compile(templateText);
                 var container = document.querySelector(where);
+                console.log("put2")
                 container.innerHTML = templateFunc({});
             });
         } else {
             loadTemplate(templateUrl).then(function (templateText) {
                 var templateFunc = Handlebars.compile(templateText);
                 var container = document.querySelector(where);
+                console.log("put3")
                 container.innerHTML = templateFunc(products);
 
             });
