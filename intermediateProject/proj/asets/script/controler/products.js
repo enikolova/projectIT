@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(page);
                 var index = productSklad._productList.findIndex(x => x.id == page);
                 console.log(index);
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/oneProductTemplate.htm', productSklad._productList[index], 'main')
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/oneProductTemplate.htm', productsL[index], 'main')
             }
         }
         window.addEventListener('hashchange', router);
