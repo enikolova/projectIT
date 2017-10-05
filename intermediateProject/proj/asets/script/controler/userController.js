@@ -28,10 +28,20 @@ document.addEventListener('DOMContentLoaded', function () {
         // }, 0);
         }
     })
-// window.onunload=function(){
-//     location.hash="";
-//     location.href=location.href.slice(0,49)
-// }
+    var txt=$("#itemID").text().slice(17)
+    var object=
+    $("#addToKoshnica").on("click",function(){
+        
+    })
+     $("#addToFavorites").on("click",function(){
+        
+    })
+ window.onunload=function(){
+     var isLoged=userList._users.some(x=>x.isLoged===true)
+     if(!(isLoged)){
+    location.hash="";
+    location.href=location.href.slice(0,49)
+ }}
 
 // $('body').on('keydown',function(event){
 // if (event.which == 116 || event.which == 17) {
@@ -40,3 +50,4 @@ document.addEventListener('DOMContentLoaded', function () {
 // })
 
 })
+

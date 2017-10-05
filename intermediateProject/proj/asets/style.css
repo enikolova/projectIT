@@ -6,7 +6,11 @@
   
 }
 #main,.footer{
+     
     display: none;
+}
+#PushPlace,#filter{
+       font-family: sans-serif;
 }
 /*#mainPage>img{
     position: absolute;
@@ -384,12 +388,12 @@ body{
     
 }
 #content>ul{
-    margin-top: 2em;
- display: inline-block;
+   margin-top: 2em;
+   display: inline-block;
 
 }
 #myCarousel{
-     margin-top:-15px;
+    margin-top:-15px;
     display: inline-block;
     width: 75%;
     
@@ -400,6 +404,7 @@ body{
     margin: 2%;
 }
 .items article{
+    width: 160px;
     display: inline-block;
     width:18%;
     margin-left: 30px;
@@ -538,11 +543,52 @@ footer p{
     margin-bottom: 3px
 }
 #templatePr label{
-margin-left: 5px;
+    margin-left: 5px;
 }
 
+#onePrTemplate{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+#onePrTemplate>img{
+    width: 300px;
+    height: auto;
+    float:left;
+    margin-right: 100px;
+}
+#onePrTemplate>h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+#onePrTemplate>p{
 
+    font-size: 1.5em;
+    margin: 10px;
+}
+#onePrTemplate button{
+    
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
+#onePrTemplate button:hover {background-color: #3e8e41}
+
+#onePrTemplate button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+}
 
 
 

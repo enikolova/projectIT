@@ -79,97 +79,103 @@ document.addEventListener('DOMContentLoaded', function () {
         function router() {
             var page = location.hash.slice(1);
             console.log(page);
-            if (!(isNaN(page))) {
-            console.log(page);
-              productController();
+            if (!(isNaN(page)) && (page != "")) {
+                console.log(page);
+                hideMenu();
+                // showMenu();
+                productController();
             } else {
-            switch (page) {
-                case 'home':
-                    // $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
-                    // $('#myCarousel').css('display', 'inline-block');
-                    showMenu();
-                    carouselController();
-                    break;
-                case 'phone': {
-                    hideMenu();
-                    phoneController();
+                switch (page) {
+                    case 'home':
+                        // $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
+                        // $('#myCarousel').css('display', 'inline-block');
+                        showMenu();
+                        carouselController();
+                        break;
+                    case 'phone': {
+                        hideMenu();
+                        phoneController();
+                    }
+                        break;
+
+                    case 'tablet':
+                        {
+                            hideMenu();
+                            tabletController();
+                        }
+                        break;
+                    case 'toys':
+                        {
+                            hideMenu();
+                            toysController();
+                        }
+                        break;
+                    case 'men':
+                        {
+                            hideMenu();
+                            menController();
+                        }
+                        break;
+                    case 'women':
+                        {
+
+                            hideMenu();
+                            womenController();
+                        }
+                        break;
+                    case 'camera':
+                        {
+                            hideMenu();
+                            cameraController();
+                        }
+                        break;
+                    case "tv":
+                        {
+                            hideMenu();
+                            tvController();
+                        }
                 }
-                    break;
-
-                case 'tablet':
-                    {
-                        hideMenu();
-                        tabletController();
-                    }
-                    break;
-                case 'toys':
-                    {
-                        hideMenu();
-                        toysController();
-                    }
-                    break;
-                case 'men':
-                    {
-                        hideMenu();
-                        menController();
-                    }
-                    break;
-                case 'women':
-                    {
-
-                        hideMenu();
-                        womenController();
-                    }
-                    break;
-                case 'camera':
-                    {
-                        hideMenu();
-                        cameraController();
-                    }
-                    break;
-                case "tv":
-                    {
-                        hideMenu();
-                        tvController();
-                    }
             }
-        }
-         }
 
-        function homeController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', undefined, 'main');
-        }
-        function phoneController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'phone'), 'main')
-        }
-        function tabletController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tablet'), 'main')
-        }
-        function tvController() {
-            console.log("hop");
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tv'), 'main')
-        }
-        function toysController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'toys'), 'main')
-        }
-        function menController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'men'), 'main')
-        }
-        function womenController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'women'), 'main')
-        }
-        function cameraController() {
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'), 'main')
-        }
-        function carouselController() {
-            homeController();
-            var carouselItem = { firstItem: fiveRandomItem(productsL), secondItem: fiveRandomItem(productsL), thirdItem: fiveRandomItem(productsL), forthItem: fiveRandomItem(productsL), fifthItem: fiveRandomItem(productsL) };
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/carouselTemplate.htm', carouselItem, '#carousell')
-            $(".items").css("display", "none");
-        }
-     function productController() {
 
-            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', filterProducts(productSklad._productList,page,"id",), 'main')
+            function homeController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', undefined, 'main');
+            }
+            function phoneController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'phone'), 'main')
+            }
+            function tabletController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tablet'), 'main')
+            }
+            function tvController() {
+                console.log("hop");
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tv'), 'main')
+            }
+            function toysController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'toys'), 'main')
+            }
+            function menController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'men'), 'main')
+            }
+            function womenController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'women'), 'main')
+            }
+            function cameraController() {
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'), 'main')
+            }
+            function carouselController() {
+                homeController();
+                var carouselItem = { firstItem: fiveRandomItem(productsL), secondItem: fiveRandomItem(productsL), thirdItem: fiveRandomItem(productsL), forthItem: fiveRandomItem(productsL), fifthItem: fiveRandomItem(productsL) };
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/carouselTemplate.htm', carouselItem, '#carousell')
+                $(".items").css("display", "none");
+            }
+            function productController() {
+
+                console.log(page);
+                var index = productSklad._productList.findIndex(x => x.id == page);
+                console.log(index);
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/oneProductTemplate.htm', productSklad._productList[index], 'main')
+            }
         }
         window.addEventListener('hashchange', router);
         router();

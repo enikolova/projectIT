@@ -1,10 +1,19 @@
 <div id="onePrTemplate">
     <h1> {{name}}</h1>
-    <!--<img src='{{url}}'>-->
+    <img src='{{url}}'>
     <p>Марка : {{companyName}} </p>
     <p>Цвят :{{color}} </p>
+      {{#if description}}
     <p>Описание : {{description}}</p>
-    <p>Състояние : {{(isNew?"Нов":"Употребяван")}}</p>
-    <p>Продуктов номер: {{id}}</p>
-    <button>Добави в кошницата</button>
+     {{else}}
+      <p>Описание : Няма информация</p>
+      {{/if}}
+    {{#if isNew}}
+     <p>Състояние : Нов</p>
+      {{else}}
+       <p>Състояние :Употребяван</p>
+  {{/if}}
+    <p id="itemID">Продуктов номер: {{id}}</p>
+    <button id="addToKoshnica">Добави в кошницата</button>
+    <button id="addToFavorites">Добави в любими</button>
 </div>
