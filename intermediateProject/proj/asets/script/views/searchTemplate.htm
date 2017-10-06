@@ -1,18 +1,6 @@
-<ul id='searchResult'>
-    {{#each foundProduct}}
-    {{#if id}}
-<a href='#{{id}}'>
-    {{/if}}
-    {{else}}
-    <a href=''>
-    {{/else}}
-<form >
-        {{#if name}}
-        <li>{{name}}</li>
-            {{/if}}
-            {{else}}
-            <li>Няма намерени резултати от търсенето...</li>
-            {{/else}}
-</form></a>
-{{/each}}
+<ul >
+    {{#each products}}
+    <li>{{name}}</li>
+    <li><p>teglo</p></li>
+    {{/each}}
 </ul>

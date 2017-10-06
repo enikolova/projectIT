@@ -1,11 +1,11 @@
-function search(text){
+function search(text,array){
     var textyt=text.toLowerCase();
     var arr=[]
-    var result=productSklad._productList.filter(function(x){
+    var result=array.filter(function(x){
         if(x.name.toLowerCase().search(textyt)!=-1){
             arr.push(x);
             return arr
-        }//return console.log("ahhaha")              
+        }//return console.log("ahhaha")                                
         })
 return result
 };
