@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     function hideMenu() {
+        console.log( document.getElementById('category'));
         $('#aside-menu').css('display', 'none');
         $('.menu').css('display', 'none');
         $('#myCarousel').css('display', 'none');
@@ -134,10 +135,19 @@ document.addEventListener('DOMContentLoaded', function () {
                             hideMenu();
                             tvController();
                         }
+                        case "cart":{
+                             hideMenu();
+                            cartController();
+                        }
                 }
             }
 
-
+            function cartController(){
+                var pr=fiveRandomItem(productsL);
+                var total=0;
+                pr.forEach(x=>total+=x.price);
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/kolichkaTemplate.htm',{shopingCart:pr,total:total,shipping:5,tot:(total+5)}, 'main');
+            }
             function homeController() {
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', undefined, 'main');
             }
