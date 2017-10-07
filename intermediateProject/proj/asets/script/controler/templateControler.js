@@ -34,6 +34,11 @@
         var prod = products.filter(pr => pr[type] == val);
         return prod;
     }
+    function filt(products, val, type,prop,val2){
+        var typeProd=filterProducts(products,val,type);
+         var s=filterProducts(typeProd,val2,prop);
+         return s;
+    }
 
     function filterCompany(products, val) {
         var companies = [];

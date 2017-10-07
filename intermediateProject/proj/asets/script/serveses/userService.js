@@ -12,21 +12,25 @@ var userList = (function () {
     User.prototype.addToFavorites = function (item) {
         this.favorites.push(item);
         localStorage.setItem('users', JSON.stringify(userList._users));
+        sessionStorage.setItem('signedUser',JSON.stringify(this));
 
     }
     User.prototype.removeFromFavorites = function (item) {
         var id = this.favorites.findIndex(el => el == item.name)
         this.favorites.splice(id, 1);
         localStorage.setItem('users', JSON.stringify(userList._users));
+        sessionStorage.setItem('signedUser',JSON.stringify(this));
     }
     User.prototype.addToShopingCard = function (item) {
         this.shopingCart.push(item);
         localStorage.setItem('users', JSON.stringify(userList._users));
+        sessionStorage.setItem('signedUser',JSON.stringify(this));
     }
     User.prototype.removeFromShopingCart = function (item) {
         var id = this.shopingCart.findIndex(el => el == item.name)
         this.shopingCart.splice(id, 1);
         localStorage.setItem('users', JSON.stringify(userList._users));
+        sessionStorage.setItem('signedUser',JSON.stringify(this));
     }
 
     function UserList() {
@@ -54,6 +58,7 @@ var userList = (function () {
         if (user) {
             user.isLoged = true;
             localStorage.setItem('users', JSON.stringify(this._users));
+            sessionStorage.setItem('signedUser',JSON.stringify(user));
             return user;
         } else {
             return null;
@@ -64,6 +69,7 @@ var userList = (function () {
         if (user) {
             user.isLoged = false;
             localStorage.setItem('users', JSON.stringify(this._users));
+        sessionStorage.clear();
             return true;
         } return false;
     }

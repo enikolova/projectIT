@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     function hideMenu() {
-        console.log( document.getElementById('category'));
+        console.log(document.getElementById('category'));
         $('#aside-menu').css('display', 'none');
         $('.menu').css('display', 'none');
         $('#myCarousel').css('display', 'none');
@@ -135,24 +135,26 @@ document.addEventListener('DOMContentLoaded', function () {
                             hideMenu();
                             tvController();
                         }
-                        case "cart":{
-                             hideMenu();
-                            cartController();
-                        }
+                    case "cart": {
+                        hideMenu();
+                        cartController();
+                    }
                 }
             }
 
-            function cartController(){
-                var pr=fiveRandomItem(productsL);
-                var total=0;
-                pr.forEach(x=>total+=x.price);
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/kolichkaTemplate.htm',{shopingCart:pr,total:total,shipping:5,tot:(total+5)}, 'main');
+            function cartController() {
+                var pr = fiveRandomItem(productsL);
+                var total = 0;
+                pr.forEach(x => total += x.price);
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/kolichkaTemplate.htm', { shopingCart: pr, total: total, shipping: 5, tot: (total + 5) }, 'main');
+
             }
             function homeController() {
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', undefined, 'main');
             }
             function phoneController() {
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'phone'), 'main')
+rad();
             }
             function tabletController() {
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tablet'), 'main')
@@ -186,13 +188,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(index);
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/oneProductTemplate.htm', productsL[index], 'main')
             }
-        }
+            function rad() {
+                $(function () {
+                    
+                }
+                )}
+               
+}
+        $('input[name="new"]').on('click', function () {
+        putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'), 'main')
+    })
         window.addEventListener('hashchange', router);
-        router();
+router();
     }).catch(function (data) {
-        console.log(data);
-    });
-   
+    console.log(data);
+});
 
+$('input[type="number"]').on('input', function () {
+    var count = $('input').value;
+    var price = $('#price').text();
+    var total = count * price;
+    $('#total').text(total)
+    console.log(total);
+})
 
 });

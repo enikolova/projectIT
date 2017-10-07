@@ -275,7 +275,7 @@ body{
     height: 40px;
     width: 100%;
     display: flex;
-    z-index: 11;
+    z-index: 22;
 
 }
 #category{
@@ -338,6 +338,7 @@ body{
     padding: 5px 10px;
     margin-top: -10px;
     float:left;
+    z-index: 20;
    
    
      
@@ -372,7 +373,7 @@ body{
     display: none;
     border: 1px solid lightgray;
     background-color: white;
-   z-index: 8;
+   z-index: 21;
 }
 .menu ul{
     /*display: inline-block;*/
@@ -632,7 +633,15 @@ footer p{
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-}
+
+ .btn-success{
+box-sizing: border-box;
+width:100%;
+ }
+ .btn-danger{
+    box-sizing: border-box;
+width:100%; 
+ }
 
 
 
