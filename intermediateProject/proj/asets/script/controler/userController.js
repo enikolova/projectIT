@@ -29,13 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
     var txt=$("#itemID").text().slice(17)
-    var object=
-    $("#addToKoshnica").on("click",function(){
-        
-    })
-     $("#addToFavorites").on("click",function(){
-        
-    })
  window.onunload=function(){
      var isLoged=userList._users.some(x=>x.isLoged===true)
      if(!(isLoged)){

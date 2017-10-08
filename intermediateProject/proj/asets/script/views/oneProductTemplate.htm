@@ -14,6 +14,6 @@
        <p>Състояние :Употребяван</p>
   {{/if}}
     <p id="itemID">Продуктов номер: {{id}}</p>
-    <button id="addToKoshnica">Добави в кошницата</button>
-    <button id="addToFavorites">Добави в любими</button>
+    <button id="addToKoshnica" prodid={{id}} onclick="user.addToShopingCard.call(signedUser,$('#addToKoshnica').attr('prodid'))">Добави в кошницата</button>
+    <button id="addToFavorites" prodid={{id}} onclick="user.addToFavorites.call(signedUser,$('#addToFavorites').attr('prodid'))">Добави в любими</button>
 </div>

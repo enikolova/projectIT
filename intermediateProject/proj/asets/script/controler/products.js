@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+   
 
     function skrii() {
         $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
@@ -135,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             hideMenu();
                             tvController();
                         }
+                        break;
                     case "cart": {
                         hideMenu();
                         cartController();
@@ -143,24 +145,21 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             function cartController() {
-                var pr = fiveRandomItem(productsL);
+                var pr = signedUser.shopingCart;
                 var total = 0;
                 pr.forEach(x => total += x.price);
-                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/kolichkaTemplate.htm', { shopingCart: pr, total: total, shipping: 5, tot: (total + 5) }, 'main');
-
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/kolichkaTemplate.htm', { shopingCart: pr, total: total, shipping: 5, tot: (total + 5) }, 'main')
             }
             function homeController() {
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/homeTemplate.htm', undefined, 'main');
             }
             function phoneController() {
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'phone'), 'main')
-rad();
             }
             function tabletController() {
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tablet'), 'main')
             }
             function tvController() {
-                console.log("hop");
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'tv'), 'main')
             }
             function toysController() {
@@ -188,28 +187,16 @@ rad();
                 console.log(index);
                 putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/oneProductTemplate.htm', productsL[index], 'main')
             }
-            function rad() {
-                $(function () {
-                    
-                }
-                )}
+           
                
 }
-        $('input[name="new"]').on('click', function () {
-        putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filterCompany(productsL, 'camera'), 'main')
-    })
+       
         window.addEventListener('hashchange', router);
 router();
     }).catch(function (data) {
     console.log(data);
 });
 
-$('input[type="number"]').on('input', function () {
-    var count = $('input').value;
-    var price = $('#price').text();
-    var total = count * price;
-    $('#total').text(total)
-    console.log(total);
-})
+
 
 });

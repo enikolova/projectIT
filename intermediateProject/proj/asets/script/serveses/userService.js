@@ -1,4 +1,5 @@
-var userList = (function () {
+var us=JSON.parse(sessionStorage.getItem('signedUser'))
+// var userList = (function () {
     var userList = new UserList();
     function User(email, password) {
         this.password = password;
@@ -9,25 +10,32 @@ var userList = (function () {
         this.isLoged = false;
     }
     User.prototype.id = userList._users.length == 0 ? 1 : userList._users.length + 1;
-    User.prototype.addToFavorites = function (item) {
+    User.prototype.addToFavorites = function (id) {
+        var item=productSklad._productList.find(prod=>prod.id==id);
+        console.log(productSklad._productList);
         this.favorites.push(item);
-        localStorage.setItem('users', JSON.stringify(userList._users));
+        var users=JSON.parse(localStorage.getItem('users'));
+        
+        var si=users.find(user=>signedUser.email==user.email);
+        si.favorites=signedUser.favorites;
+        localStorage.setItem('users', JSON.stringify(users));
         sessionStorage.setItem('signedUser',JSON.stringify(this));
 
     }
-    User.prototype.removeFromFavorites = function (item) {
-        var id = this.favorites.findIndex(el => el == item.name)
+    User.prototype.removeFromFavorites = function (id) {
+        var id = this.favorites.findIndex(el => id == el.id)
         this.favorites.splice(id, 1);
         localStorage.setItem('users', JSON.stringify(userList._users));
         sessionStorage.setItem('signedUser',JSON.stringify(this));
     }
-    User.prototype.addToShopingCard = function (item) {
+    User.prototype.addToShopingCard = function (id) {
+         var item= productSklad._productList.find(prod=>prod.id==id);
         this.shopingCart.push(item);
         localStorage.setItem('users', JSON.stringify(userList._users));
         sessionStorage.setItem('signedUser',JSON.stringify(this));
     }
-    User.prototype.removeFromShopingCart = function (item) {
-        var id = this.shopingCart.findIndex(el => el == item.name)
+    User.prototype.removeFromShopingCart = function (id) {
+        var id = this.shopingCart.findIndex(el => id == el.id);
         this.shopingCart.splice(id, 1);
         localStorage.setItem('users', JSON.stringify(userList._users));
         sessionStorage.setItem('signedUser',JSON.stringify(this));
@@ -74,5 +82,10 @@ var userList = (function () {
         } return false;
     }
     userList.addUser("admin@gmail.com", "123456");
-    return userList;
-})();
+//     return userList;
+
+// })();
+
+
+var user=new User();
+var signedUser=userList._users.find(user=>user.email==us.email && user.password==us.password);

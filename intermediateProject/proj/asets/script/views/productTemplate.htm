@@ -1,27 +1,16 @@
 <div id="templatePr">
     <aside>
         <ul id="types">
-            <li><input type="radio" name="all" checked="checked" id='one'><label for="all">Всички</label></li>
-            <li><input type="radio" name="all" label for="new" isNew='true'>Нови</label>
+            <li><input type="radio" name="all" id='one' onclick='loadNew()'><label for="all">Всички</label></li>
+            <li><input type="radio" name="all" onclick=loadNew(true)><label for="new" isNew='true' >Нови</label>
             </li>
-            <li><input type="radio" name="all"><label for="old" isNew='false'>Употребявани</label></li>
+            <li><input type="radio" name="all" onclick=loadNew(false)><label for="old" isNew='false' >Употребявани</label></li>
         </ul>
-        <script id="myscript" type="text/javascript">var radios = document.querySelectorAll('#types input[type="radio"]');
-                    console.log(radios);
-                    radios.forEach(radio => {
-                        var which = location.hash.slice(1);
-                        radio.addEventListener('click', function (event) {
-                            event.preventDefault();
-                            if (this.hasAttribute('isNew'))
-                                var isNew = this.getAttribute("isNew");
-                            putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm', filt(productSklad._productList, which, 'type', 'isNew', isNew), 'main')
-                        })
-                    })</script>
         <span style="color:red;font-size:1.2em;">Производител:</span>
         <ul>
             {{#each companies}}
             <li>
-                <input type="checkbox" name='companies' /><label for="companies">{{compName}}</label>
+                <input type="checkbox" name='companies' id='{{compName}}' onclick=""/><label for="companies">{{compName}}</label>
             </li>
             {{/each}}
 
