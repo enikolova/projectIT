@@ -14,15 +14,26 @@ function putTemplate(templateUrl, products, where) {
         loadTemplate(templateUrl).then(function (templateText) {
             var templateFunc = Handlebars.compile(templateText);
             var container = document.querySelector(where);
-            console.log("put2")
             container.innerHTML = templateFunc({});
         });
     } else {
         loadTemplate(templateUrl).then(function (templateText) {
             var templateFunc = Handlebars.compile(templateText);
             var container = document.querySelector(where);
-            console.log("put3")
+           
             container.innerHTML = templateFunc(products);
+$('#comp input').each(function(){
+    this.addEventListener('click',function(){
+        var which=location.hash.slice(1);
+    console.log(which);
+        var w=this.getAttribute('comp')
+        console.log(w);
+        var prod=filt(productSklad._productList,which.toString(),'type','companyName',w.toString());
+        var com=filterCompany(productSklad._productList,which)
+        console.log(prod);
+        putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/productTemplate.htm',{ productsList: prod, companies: com.companies}, 'main')
+    })
+})
             $('#exit').on('click',function(){
                 location.hash="";
                 var user=userList._users.find(user=>user.email==signedUser.email && user.password==signedUser.password);
@@ -71,7 +82,7 @@ function putTemplate(templateUrl, products, where) {
             })
 
 
-            $('.btn-danger').each(function (event) {
+            $('.productsmoney .btn-danger').each(function (event) {
 
                 this.addEventListener('click', function () {
                     console.log(products);

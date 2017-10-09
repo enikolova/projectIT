@@ -7,10 +7,10 @@
             <li><input type="radio" name="all" onclick=loadNew(false)><label for="old" isNew='false' >Употребявани</label></li>
         </ul>
         <span style="color:red;font-size:1.2em;">Производител:</span>
-        <ul>
+        <ul id='comp'>
             {{#each companies}}
             <li>
-                <input type="checkbox" name='companies' id='{{compName}}' onclick=""/><label for="companies">{{compName}}</label>
+                <input type="radio" name='companies' id='{{compName}}' comp='{{compName}}'/><label for="companies">{{compName}}</label>
             </li>
             {{/each}}
 

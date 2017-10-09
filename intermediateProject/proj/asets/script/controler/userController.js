@@ -48,6 +48,8 @@ $('#l').on('mouseover',function(){
 $('#f').on('mouseover',function(){
      putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/favoriteTemplate.htm',{favorites:signedUser.favorites}, '#favorite')
 })
-
+$('#c').on('mouseover',function(){
+     putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/smallCartTemplate.htm',{shoppingCart:signedUser.shopingCart}, '#cart')
+})
 })
 
