@@ -42,5 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
 // }
 // })
 
+$('#l').on('mouseover',function(){
+    putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/signedUserTemplate.htm',signedUser, '#log')
+})
+$('#f').on('mouseover',function(){
+     putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/favoriteTemplate.htm',{favorites:signedUser.favorites}, '#favorite')
+})
+
 })
 

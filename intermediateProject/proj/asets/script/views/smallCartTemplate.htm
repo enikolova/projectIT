@@ -1,0 +1,18 @@
+<div>
+    {{#if shoppingCart}}
+    <table id='shop'>
+        {{#each shoppingCart}}
+        <tr prodID='{{id}}'>
+            <td style="vertical-align:middle"><img src='{{url}}' width="50"></td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    <button type="button" class="btn btn-success">
+                           Виж количката <span class="glyphicon glyphicon-play"></span>
+                        </button>
+    {{else}}
+    <p>Нямаш нито един продукт в количката</p>
+    {{/if}}
+</div>

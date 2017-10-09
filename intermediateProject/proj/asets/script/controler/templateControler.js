@@ -23,6 +23,32 @@ function putTemplate(templateUrl, products, where) {
             var container = document.querySelector(where);
             console.log("put3")
             container.innerHTML = templateFunc(products);
+            $('#exit').on('click',function(){
+                location.hash="";
+                var user=userList._users.find(user=>user.email==signedUser.email && user.password==signedUser.password);
+                console.log(userList.logout(user.email))
+                if(userList.logout(user.email))
+                {
+                    location.reload();
+                }
+
+            })
+            $('#lubimi tr').each(function(){
+                this.addEventListener('mouseover',function(){
+                    this.style.backgroundColor='lightblue';
+                })
+                this.addEventListener('mouseleave',function(){
+                     this.style.backgroundColor='white';
+                })
+                this.addEventListener('click',function(){
+                   var id=this.getAttribute('prodID')
+                var index = productSklad._productList.findIndex(x => x.id == id);
+                console.log(index);
+               location.hash=id;
+               router();
+                putTemplate('http://localhost/pr/projectIT/intermediateProject/proj/asets/script/views/oneProductTemplate.htm',productSklad._productList[index], 'main')
+                })
+            })
              $('strong[prod]').each(function() {
                         var all = 0;
                         document.querySelectorAll('.money').forEach(x => all += Number(x.textContent));
@@ -63,8 +89,7 @@ function putTemplate(templateUrl, products, where) {
     }
 
 }
-
-
+ 
 function filterProducts(products, val, type) {
     var prod = products.filter(pr => pr[type] == val);
     return prod;

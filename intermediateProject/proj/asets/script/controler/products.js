@@ -1,8 +1,6 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-   
 
-    function skrii() {
+function skrii() {
         $('#aside-menu').css({ 'display': 'none', 'position': 'static' })
     }
     function pokaji() {
@@ -11,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
             'position': 'absolute'
         })
     }
-    function hideMenu() {
+  
+  function hideMenu() {
         console.log(document.getElementById('category'));
         $('#aside-menu').css('display', 'none');
         $('.menu').css('display', 'none');
@@ -72,13 +71,17 @@ document.addEventListener('DOMContentLoaded', function () {
         // });
         // });
     }
+    var router=function(){
+
+    }
+   document.addEventListener('DOMContentLoaded', function () {
     getProducts().then(function (products) {
         var productsL = [];
         var pr = [];
         productSklad._productList = Array.prototype.slice.call(products.products, 0);
         productsL = Array.prototype.slice.call(products.products, 0);
         console.log(filterCompany(productsL, 'phone'));
-        function router() {
+       router=function(){
             var page = location.hash.slice(1);
             console.log(page);
             if (!(isNaN(page)) && (page != "")) {

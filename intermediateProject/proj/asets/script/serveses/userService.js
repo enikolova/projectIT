@@ -1,11 +1,15 @@
-var us=JSON.parse(sessionStorage.getItem('signedUser'))
+//var us=JSON.parse(sessionStorage.getItem('signedUser'))
 // var userList = (function () {
     var userList = new UserList();
+    var user=new User();
+var signedUser=null
     function User(email, password) {
         this.password = password;
         this.email = email;
         this.favorites = [];
         this.shopingCart = [];
+        this.cards=[];
+        this.address=[];
         this.id = User.prototype.id++;
         this.isLoged = false;
     }
@@ -15,7 +19,6 @@ var us=JSON.parse(sessionStorage.getItem('signedUser'))
         console.log(productSklad._productList);
         this.favorites.push(item);
         var users=JSON.parse(localStorage.getItem('users'));
-        
         var si=users.find(user=>signedUser.email==user.email);
         si.favorites=signedUser.favorites;
         localStorage.setItem('users', JSON.stringify(users));
@@ -67,17 +70,20 @@ var us=JSON.parse(sessionStorage.getItem('signedUser'))
             user.isLoged = true;
             localStorage.setItem('users', JSON.stringify(this._users));
             sessionStorage.setItem('signedUser',JSON.stringify(user));
+            us=JSON.parse(sessionStorage.getItem('signedUser'))
+            signedUser=user;
             return user;
         } else {
             return null;
         }
     }
-    UserList.prototype.logout = function (id) {
-        var user = this._users.find(user => user.id == id && user.isLoged == true);
+    UserList.prototype.logout = function (email) {
+        var user = this._users.find(user => user.email == email);
+        console.log(user);
         if (user) {
             user.isLoged = false;
             localStorage.setItem('users', JSON.stringify(this._users));
-        sessionStorage.clear();
+            sessionStorage.setItem('signedUser','');
             return true;
         } return false;
     }
@@ -87,5 +93,4 @@ var us=JSON.parse(sessionStorage.getItem('signedUser'))
 // })();
 
 
-var user=new User();
-var signedUser=userList._users.find(user=>user.email==us.email && user.password==us.password);
+

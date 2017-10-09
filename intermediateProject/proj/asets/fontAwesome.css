@@ -38,6 +38,12 @@ font-size: 1.5em;
       margin-top: 5px;
       margin-left: 4px
 }
+li .fa-angle-right{
+     color: blue;
+      font-size: 1em;
+      margin-top: 5px;
+      margin-left: 4px
+}
 .fa-mobile{
     color:black;
     font-size: 2em;

@@ -1,0 +1,18 @@
+<div>
+    {{#if favorites}}
+    <table id='lubimi'>
+        {{#each favorites}}
+        <tr prodID='{{id}}'>
+            <td style="vertical-align:middle"><img src='{{url}}' width="50"></td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    <button type="button" class="btn btn-success">
+                            Покажи всички любими <span class="glyphicon glyphicon-play"></span>
+                        </button>
+    {{else}}
+    <p>Нямаш нито един любим продукт</p>
+    {{/if}}
+</div>
